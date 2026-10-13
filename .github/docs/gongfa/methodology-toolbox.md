@@ -966,7 +966,7 @@ README.md      # 概念表/错误语义/验收指标
 | Solve主题 | 对照与处理 |
 |---|---|
 | A 误差预算与不确定性传播 | 冻结选区含6条来源（3条`MethodSpec`、3条`OperatorSpec`）：确定性误差界、概率不确定度传播、问题条件性与算法稳定性、自适应误差控制、残差/后向误差审计、测量不确定度预算。它们的对象、前提、输出与证据合同不同；选区未提供统一的分支条件或组合协议，现有跨域线性步骤属于编辑综合而非来源共同定义的方法。因此撤回将其作为单一方法候选保留的初步倾向，暂不整体纳入，也不自动拆成6项。与历史候选D011“性能统计工具箱”、VC100“门槛导向抽样”、VC099“校准估计”相邻但不等同。重启需先明确学科专用范围及复核人，或冻结能定义适用分支、输入输出和组合规则的派生方法来源；拟议ID `gongfa-error-uncertainty-budget`尚未分配。 |
-| B 文献综合与证据缺口图谱 | 冻结选区只含`psoa.research.literature-synthesis`（`MethodSpec`）；其多来源综合目标与`psoa.research.source-criticism`的单来源可信范围审查、`gongfa-evidence-triangulation`的独立渠道交叉核对相邻但不同。可继续按方法候选评审；来源授权、独立语义审查与实际综合效果仍未验证，拟议ID `gongfa-literature-synthesis-evidence-gaps`尚未分配。 |
+| B 文献综合与证据缺口图谱 | 冻结选区只含`psoa.research.literature-synthesis`（`MethodSpec`）；原条目明确研究问题/范围、来源分层、主张与方法提取、异质性比较、支持/冲突/空白产物及停止条件。其跨研究综合不同于历史候选`psoa.research.source-criticism`的单来源质量审查，也不同于`gongfa-evidence-triangulation`的独立渠道交叉核验；在已检查的410条目录与Excel首轮对照中未见同等综合流程。因此语义上可保留为来源绑定的待审候选，但本轮快照用途仅为溯源与人工评审；是否写入机器登记仍须另行确认。外部引文、许可、效果及556→410全量语义去重均未验证；拟议ID `gongfa-literature-synthesis-evidence-gaps`尚未分配。 |
 | C 检索质量与证据覆盖审计 | 冻结候选投影只包含`psoa.information-knowledge-science.relevance-precision-recall-audit`（`OperatorSpec`）；信息需求规约、检索式扩展和证据检索循环虽存在于当时的Solve来源包，但未作为条目投影进本候选快照。当前文稿的端到端步骤若要作为多来源派生方法，须另行冻结并逐项绑定这些来源；否则应收窄为已冻结的相关性/精确率/召回审计。与VC065“Skill路由条件设计”和VC019“代码RAG”相邻但不等同；拟议ID `gongfa-retrieval-quality-evidence-coverage`尚未分配。 |
 | D 摊销成本分析 | 暂缓；算法专用方法，待明确是否收录学科专用功法及相应复核范围。 |
 | E 内核核验的形式证明 | 暂缓；属于证明助手/形式验证专用方法，不因与轻量形式化、状态不变量相邻就泛化为通用功法。 |
