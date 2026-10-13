@@ -978,11 +978,11 @@ README.md      # 概念表/错误语义/验收指标
 
 ##### 26个精确标题匹配的进一步核对
 
-> 24项可由既有冻结选区复核；另外2项仅由本轮本地全量导出定位，未纳入本次冻结选区，不据此建立新条目。
+> 24项可由既有冻结选区复核；另外2项现已由`source-selected-title-matches-20261014.txt`冻结精确Solve记录，供语义对照，不据此建立新条目。
 
 - 其中24项与`source-classified-candidates-20261007.json`的冻结Solve24选区具有相同`source_id`、相同原始pack SHA及相同完整JSON条目；它们已作为历史来源候选存在，不是新增功法或需要更新的第二版本。分组为：研究（来源批判、重复研究、预注册、代理指标—真实目标对齐审计）；计算机科学（不变量检查、接口契约、依赖图）；软件工程（架构权衡、增量开发、影响分析、风险驱动测试、事故复盘）；编程（二分调试、最小复现、模糊测试、性质测试、差分测试）；问题求解（手段—目的分析、选择性启发式搜索、构造性见证、元认知监控）；决策科学（信息价值、后悔与鲁棒决策）；工程（失败预演）。保留旧快照与意见，不因本轮全量索引而重建或提升状态。
-- `psoa.cognitive-science.metacognitive-monitoring`与既有`psoa.problem-solving-methodology.metacognitive-monitoring`标题相同，核心操作均为监控策略、进展和停止/切换条件；学科语境略有差别，但未显示独立机制，映射到既有条目，不另立身份。
-- `psoa.programming-principles-101.information-hiding`与历史`html96:VC004`虽同名，却不完全同义：VC004表达重要设计知识由单一模块拥有、减少跨模块依赖；Solve条目描述收窄公开承诺、隐藏易变实现并验证替换能力。属于相邻而非已证同一，暂缓独立候选，需先确认范围并冻结该条目的具体来源；不因标题相同而合并或新增。
+- `psoa.cognitive-science.metacognitive-monitoring`已在新快照冻结；历史候选`psoa.problem-solving-methodology.metacognitive-monitoring`则绑定旧Solve pack SHA `ff2c226e4e43c1230864e88ffbfbba489b4a14a60dd52f663bba9eced34d46ad`的`/entries/7`。两者同属策略监控与继续/切换/停止控制；认知科学记录明确加入执行前预测、观察偏差和信心更新，旧记录更强调进展/成本、替代策略预期收益与阈值控制。属强语义重叠但过程侧重不同，不能仅凭同名宣布身份相同，也未显示必须新增独立登记。新记录`ref:ramps-metareasoning`、`ref:national-academies-metacognition`及许可证尚未核验；暂保留为未决映射，不自动合并或登记。
+- `psoa.programming-principles-101.information-hiding`已在新快照冻结；其扩展字段记有`source_principle: 3.14`。与现有候选`3.14 信息隐藏`“隐藏易变设计决策、公开稳定事实”高度相邻；新记录补充盘点调用者需要、迁移内部依赖和验证替换/错误路径，更像将该准则操作化，尚不足以证明独立功法。历史`html96:VC004`表达重要设计知识由单一模块拥有、减少跨模块依赖，是相邻的边界/所有权主张，不应因同名替代上述对照。引用`ref:programming-principles-101-book`及许可证未核验；不合并旧候选，也不新登记，待核原文和收录范围后再判。
 
 以上是候选主题级去重结果，不宣称556个来源ID与既有410条逐项语义去重完成；来源提取、候选主题映射、登记状态和效能证据分别计数。
 
