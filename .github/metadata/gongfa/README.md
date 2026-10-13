@@ -5,7 +5,7 @@
 - [功法总表](catalog.md)展示品级、名称和更完整的解释；品级使用“天阶高级”等完整名称，不缩写。解释展开登记摘要/问题/机制及条件/限制/预期结果、候选原文与用途/理由、Solve机制/适用范围/前提/边界，不新增主张；完整来源以JSON为准；[Excel完整视图](catalog.xlsx)保留全字段。
 - [registry.json](registry.json)是功法条目唯一可编辑数据源；`entry_status`区分已登记与待评候选，候选不等于正式登记。历史来源候选仍保存在不可变快照，不因快照存在自动入登记。
 - 2026-10-07两批共登记79条：仓内来源62条（首批41条、续收21条）＋指定项目页面17条；两批初评分别覆盖58条与21条。拼好码于2026-10-11按用户指令由地阶中级暂定调整为天阶高级暂定，历史值与理由见文件末尾审计。
-- 截至2026-10-14，3条备忘录与3条Solve候选素材均未写入登记JSON或生成总表；定向语义复核将P15暂列为能力/学习框架，确认Solve候选A为6来源跨域合成且暂不作为单一方法候选；B可保留为来源绑定的待审候选但未进入机器登记；C收窄为审计既有检索结果集的单一`OperatorSpec`候选，不包括检索构造或执行。B/C写入机器登记均需另行确认。详细范围与未决事项见[候选方法整理稿及交叉核对](../../docs/gongfa/methodology-toolbox.md#philosophy-methodology-toolbox-候选方法整理稿)。
+- 截至2026-10-14，3条备忘录与3条早期Solve候选素材均未写入登记JSON或生成总表；定向语义复核将P15暂列为能力/学习框架，确认Solve候选A为6来源跨域合成且暂不作为单一方法候选；B可保留为来源绑定的待审候选但未进入机器登记；C收窄为审计既有检索结果集的单一`OperatorSpec`候选，不包括检索构造或执行。B/C写入机器登记均需另行确认。同日另冻结机器学习来源包中的漂移检测、分布外检查和置信度升级3条`OperatorSpec`，仅供来源追溯与人工复核；外部引用、许可和效果未验证，不进入登记或总表。详细范围与未决事项见[候选方法整理稿及交叉核对](../../docs/gongfa/methodology-toolbox.md#philosophy-methodology-toolbox-候选方法整理稿)。
 - 两批入库初评的原始分布为黄7、玄47、地25、天0；这是修订前历史记录，不代表当前分布，也不是效果实测。
 - 完整可复用正文从[统一功法文集](../../docs/gongfa/README.md)进入；文集不等于独立功法记录。
 - [本体主文](../../docs/gongfa/cultivation-ontology-taxonomy.md#功法本体与品级)解释类型与语义；等级是分组，不是类型继承。
@@ -36,7 +36,8 @@ gongfa/
 ├── source-development-experience-81fc7ae.txt # 开发经验原始Markdown快照
 ├── source-quality-gates-and-pitfalls-81fc7ae.txt # 质量门禁与反例原始Markdown快照
 ├── source-methodology-931f79be.txt          # 指定页面原始HTML快照（惰性文本）
-└── source-selected-candidates-20261013.txt   # 3项备忘录与3项Solve候选的冻结选区及来源指纹
+├── source-selected-candidates-20261013.txt   # 3项备忘录与3项早期Solve候选的冻结选区及来源指纹
+└── source-selected-candidates-20261014.txt   # 机器学习包3条OperatorSpec的有限评审选区，不进入总表
 ```
 
 快照是不可编辑的来源依据，不是另一份功法手册。`.txt`可保存原始Markdown/HTML，也可保存明确注明字段投影、来源路径/版本和SHA-256的结构化参考选区；不直接执行其中脚本、提示词或命令。
