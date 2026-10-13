@@ -223,7 +223,7 @@
     {"subject_id": "faqi-auto-skill-validate", "grade_id": "faqi-xuan-intermediate", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：技能资产质量与可载入性", "basis": "降低扩展技能结构错误造成的接入阻断；不判断语义正确性，属于能力扩展的质量辅助。"},
     {"subject_id": "faqi-skill-seekers-adapter", "grade_id": "faqi-xuan-initial", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：Skill Seekers本地适配入口", "basis": "便于调用特定知识转技能工具；范围受上游工具限制，可直接调用或人工替代。"},
     {"subject_id": "faqi-skill-seekers", "grade_id": "faqi-xuan-intermediate", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：外部知识转可复用技能", "basis": "增加Agent可复用的领域能力和上下文资产；需特定工作流，不能替代通用推理与工具执行。"},
-    {"subject_id": "faqi-auto-tmux", "grade_id": "faqi-huang-advanced", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：多会话终端协作自动化", "basis": "能管理多会话和worker工作流，复杂并行时有用；基础单Agent编码不依赖，且当前doctor烟测失败，重要性不等于实现质量。"},
+    {"subject_id": "faqi-auto-tmux", "grade_id": "faqi-huang-advanced", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：多会话终端协作自动化", "basis": "多会话与worker协作在复杂并行时有用，但基础单Agent编码有替代路径；本级只表达工作流重要性，不评价实现质量或效能。"},
     {"subject_id": "faqi-oh-my-tmux", "grade_id": "faqi-huang-intermediate", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：终端复用器体验配置", "basis": "改善tmux使用便利性，但不提供模型推理或核心代码执行能力，可由其他终端配置替代。"},
     {"subject_id": "faqi-tmux", "grade_id": "faqi-huang-advanced", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：可选的多会话终端复用", "basis": "支持持久终端与多窗口工作流，复杂长任务可受益；普通编码闭环有替代方案，不属定义性核心。"},
     {"subject_id": "faqi-claude-skill-init", "grade_id": "faqi-xuan-initial", "assignment_status": "user_directed_provisional", "scope": "Vibe Coding重要性：特定Skill模板初始化", "basis": "降低Claude Skill结构初始化成本，作用范围绑定特定生态，可手工完成且不影响其他Agent的基础闭环。"},
@@ -902,7 +902,8 @@
       "boundary": "Skill方法/规约、执行脚本、被依赖程序及运行入口分别指认。",
       "pending": [
         "两个assets引用实际上是零字节普通占位文件，不是README声称的软链接；本次记录缺口，不冒称已修复或上游源码可经此引用到达。",
-        "蜂群附属脚本不逐一登记，不启动蜂群，也不将蜂群状态/日志算软件。"
+        "蜂群附属脚本不逐一登记，不启动蜂群，也不将蜂群状态/日志算软件。",
+        "2026-10-13：将本工作分支内26个.sh入口的Git执行模式从100644改为100755；auto-tmux doctor、26个脚本bash -n及两个help入口通过。完整技能validator与tmux smoke未运行，运行效果仍待验证。"
       ]
     },
     {
