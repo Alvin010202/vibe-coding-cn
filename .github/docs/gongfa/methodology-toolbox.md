@@ -709,7 +709,7 @@ README.md      # 概念表/错误语义/验收指标
 <a id="philosophy-methodology-toolbox-候选方法整理稿"></a>
 ### 候选方法整理稿（待评审）
 
-> 本节把若干可独立描述的框架和操作方法整理成候选稿。交叉核对后，建议优先评审“最小论证结构”“库、包与 API 能力阶梯”“最小模型—迁移—边界回填”及3项跨域来源候选；6项目前仅在文稿和冻结来源选区中，尚未写入`registry.json`或生成总表，身份、类型、品级与是否登记仍待评审。其余备忘录候选按下方结果合并或暂缓。按当前整理要求，不列外部真实来源、作者或机构归属；不确定的归属和未经定义的主张不写成事实。
+> 本节把若干可独立描述的框架和操作方法整理成候选稿。交叉核对后，优先审查“最小论证结构”“库、包与 API 能力阶梯”“最小模型—迁移—边界回填”及3项跨域来源候选；6项仍只在文稿和冻结来源选区中，尚未写入`registry.json`或生成总表。2026-10-14续审补充了主题粒度和来源投影意见：P15暂不作为施行方法，A为跨域合成，C的候选投影仅含1条操作记录；这些是待审意见，不构成登记、类型、品级或效果批准。其余备忘录候选按下方结果合并或暂缓。按当前整理要求，不列外部真实来源、作者或机构归属；不确定的归属和未经定义的主张不写成事实。
 
 #### 候选：分类判准形成链
 
@@ -910,28 +910,30 @@ README.md      # 概念表/错误语义/验收指标
 <a id="philosophy-methodology-toolbox-candidate-retrieval-quality-evidence-coverage"></a>
 #### 候选：检索质量与证据覆盖审计
 
-**用途**：检查一次检索是否返回相关证据、重要内容漏检多少，以及排序能否把关键来源放到可审查位置。
+**用途**：在检索结果集已经形成后，检查相关性、召回、排序和重要漏检；不负责设计检索策略、扩展查询或执行检索。
+
+**适用前提**：信息需求、结果集、相关性标准和可复核判断集已定义。没有独立判断集时不报告 precision/recall。
 
 **落地动作**：
 
-1. 把信息需求和主题/证据/用途相关性判据写清楚。
-2. 建立可复核的判断集，记录检索式、来源和版本。
-3. 对命中结果分层标注相关性、来源质量与判断分歧。
-4. 在判断集足以支持时计算 precision、recall 和排序指标。
-5. 分析漏检、重复、来源偏置和覆盖边界，并披露评估不确定性。
+1. 固定查询、结果集与评估集版本，明确主题/证据/用途相关性规则。
+2. 抽样标注相关、不相关、部分相关及来源权威层级，并记录分歧。
+3. 按判断集计算 precision、recall、排序质量及可支持的分层差异。
+4. 检查漏检、重复、来源偏置和评估集泄漏。
+5. 报告覆盖边界与判断不确定性；判断不一致时补独立判断或修订相关性规则。
 
-**产物**：检索质量、重要漏检、排序表现、覆盖范围和判断分歧报告。
+**产物**：绑定查询、判断规则、标注样本、指标、漏检案例和评估集版本的检索审计报告。
 
-**边界**：没有相关性标准就不能解释指标；没有判断集不得报告 precision/recall；排名、链接数和引用数不等于证据充分；“未检索到”不证明证据不存在。
+**边界**：这是针对既有结果集的单一审计算子，不包含信息需求制定、检索式扩展或证据检索循环；没有相关性标准就不能解释指标，排名/链接/引用数量不等于证据充分，“未检索到”也不证明证据不存在。
 
-#### 候选交叉核对与本轮取舍（2026-10-13）
+#### 候选交叉核对与本轮取舍（2026-10-13；2026-10-14补充）
 
-> 对照基线总表为410条（79条登记、331条历史来源候选）。下表把工具集候选P01–P32、已归一化的11项备忘录草稿和Solve A–G主题映射到现有登记及历史候选详情；P编号与11项草稿是同一批素材的不同整理视图，不重复计数。表中拟议ID不是已分配身份。Solve的556个ID已完成来源级导出，但未逐条与410条做完整语义比较；本轮仅对A–C候选核过完整操作和边界。对话中的C01–C20未找到独立冻结定义清单，不声称已逐项裁决。候选状态不代表正式登记、类型确认、品级或效果。
+> 对照基线总表为410条（79条登记、331条历史来源候选）。下表把工具集候选P01–P32、已归一化的11项备忘录草稿和Solve A–G主题映射到现有登记及历史候选详情；P编号与11项草稿是同一批素材的不同整理视图，不重复计数。表中拟议ID不是已分配身份。Solve的556个ID已完成来源级导出，但未逐条与410条做完整语义比较；本轮补充对6项候选的主题粒度、相邻登记和冻结投影范围作定向核对，不构成全量语义去重。编号需严格区分：本体主文中的C01–C20是“分类验收判例”；不可变历史候选快照使用C001–C010、C012–C021（C011为排除视图），两者均不能据相近编号认作对话所指的候选包。当前仍未找到能绑定该候选包身份、定义与来源的独立冻结清单，故不声称已逐项裁决。候选状态不代表正式登记、类型确认、品级或效果。
 
 | 工具集候选 | 对照与处理 |
 |---|---|
 | P01 分类形成链 | 与`gongfa-concept-engineering`、`gongfa-state-classification`对齐；现有内容覆盖主要分类与概念边界，判准链未显示足够独立增量。 |
-| P02 论证最小结构 | 建议继续评审；拟议ID `gongfa-minimal-argument-structure`尚未分配。与`gongfa-steelmanning`（重建最强观点）和`gongfa-evidence-triangulation`（比较证据渠道）相邻但问题、操作不同。 |
+| P02 论证最小结构 | 作为结论—依据—推理连接—适用条件/反例的检查框架，初步看与`gongfa-steelmanning`（重建最强观点）和`gongfa-evidence-triangulation`（比较独立证据渠道）相邻但不等同；可继续按`method-specification`候选评审。来源仍是仓内备忘录，不代表外部来源核实或效果证据；拟议ID `gongfa-minimal-argument-structure`尚未分配。 |
 | P03 输入—处理—输出模型 | 对齐`gongfa-compositional-description`、`gongfa-input-state-transform-separation`和`gongfa-stable-interface-contract`；作为最小表征素材，不再建立平行模型。 |
 | P04 目标—指标—反馈优化 | 合并到`gongfa-methodology-delivery-loop`、`gongfa-performance-by-measurement`及实验/信念更新相关内容；目标、指标和更新不能脱离具体验收独立成通用闭环。 |
 | P05 误差反馈迭代闭环 | 对齐`gongfa-problem-definition-framework`、`gongfa-methodology-delivery-loop`、`gongfa-abductive-debugging`和`gongfa-counterfactual-testing`；不重复登记总流程。 |
@@ -944,11 +946,11 @@ README.md      # 概念表/错误语义/验收指标
 | P12 古文抽象求解流程 | 合并到问题求解、失败预演和架构权衡；巨型流水线会与现有流程并行且难验证各阶段边界。 |
 | P13 任务完成六阶段 | 合并到求解闭环、胶水原则、验证和复盘；不建第二条总工作流。 |
 | P14 解决方案复用决策 | 与`gongfa-glue-principle`、`gongfa-glue-coding`实质重叠，不新增。 |
-| P15 库/包/API能力阶梯 | 建议继续评审；拟议ID `gongfa-library-api-capability-ladder`尚未分配。与胶水原则、拼好码、API承诺和第三方API选型相邻，但新增从调用到集成、排错、适配的学习路线。 |
+| P15 库/包/API能力阶梯 | 初步判为能力/学习进阶框架，而非单次任务的施行方法：六阶描述从调用到设计的能力范围，不构成必须依次执行的操作程序。与`gongfa-glue-principle`、`gongfa-glue-coding`、历史候选B005（API承诺与兼容性）及VC015（第三方API选择）相邻；若保留，先按`explanatory-content`方向审查正文归属，不作为已确认的`method-specification`；阶梯不代表个人评价或品级。拟议ID `gongfa-library-api-capability-ladder`尚未分配。 |
 | P16 对照式分析 | 暂缓；当前是可选分析轴清单，不是有选轴规则和反例的独立操作方法。 |
 | P17 表征变换与关系操作 | 分别并入`gongfa-compositional-description`、`gongfa-evidence-triangulation`及溯因/迁移等具体操作；不把动作名词表批量登记。 |
 | P18 数学三层工作流 | 暂缓为学科专用候选；`gongfa-lightweight-formal-methods`只覆盖形式化的一部分，未证明整条数学流程适用于通用编码任务。 |
-| P19 最小模型—迁移—边界回填 | 建议继续评审；拟议ID `gongfa-minimal-model-transfer-boundaries`尚未分配。与第一性原理、思想实验、拍扁及研究迁移相邻但不等同。移除未经核验的Shannon归属，采用中性名称。 |
+| P19 最小模型—迁移—边界回填 | 作为复合施行方法候选继续评审：最小化建模、逐项映射、边界回填和验证组成一条操作路径；与`gongfa-first-principles`、`gongfa-thought-experiment`、`gongfa-representation-flattening`及研究迁移相邻但不等同。来源仍是仓内备忘录；不恢复未经核验的Shannon归属，拟议ID `gongfa-minimal-model-transfer-boundaries`尚未分配。 |
 | P20 古文次序与渐进准则 | 对齐增量开发、规格先行与总体作业流；格言依赖情境，不单独立项。 |
 | P21 根因、机制与系统效应 | 对齐`gongfa-systems-boundary-feedback`、`gongfa-mechanistic-explanation`、`gongfa-proximate-causal-mechanism`及事故复盘；故事本身不证明工程规律。 |
 | P22 证据、认知与反偏差 | 对齐来源批判、证据三角测量、可证伪主义和错误认识论；典故作为反例素材。 |
@@ -965,21 +967,24 @@ README.md      # 概念表/错误语义/验收指标
 
 | Solve主题 | 对照与处理 |
 |---|---|
-| A 误差预算与不确定性传播 | 建议继续评审；拟议ID `gongfa-error-uncertainty-budget`尚未分配，由6个来源条目编辑合并。与性能统计置信区间、门槛抽样和校准估计相邻，但它处理误差来源向结论的传播及容忍度比较。 |
-| B 文献综合与证据缺口图谱 | 建议继续评审；拟议ID `gongfa-literature-synthesis-evidence-gaps`尚未分配。与单来源批判、独立交叉验证互补，不把多篇摘要拼接当共识。 |
-| C 检索质量与证据覆盖审计 | 建议继续评审；拟议ID `gongfa-retrieval-quality-evidence-coverage`尚未分配。与Skill路由精确率/召回及代码RAG相邻但范围更广；只取原子评估操作，不把派生检索循环另立新项。 |
-| D 摊销成本分析 | 暂缓；算法专用方法，待明确是否收录学科专用功法及相应复核范围。 |
-| E 内核核验的形式证明 | 暂缓；属于证明助手/形式验证专用方法，不因与轻量形式化、状态不变量相邻就泛化为通用功法。 |
-| F 因果识别假设与敏感性审计 | 暂缓；因果研究专用，需确认领域范围；近端机制和反事实推理不等同于混杂识别/敏感性分析。 |
-| G 分布外/漂移适用域审计 | 不单独新增；与拍扁、受约束状态变换、有效知识子集的外推边界及既有评估记录相邻。漂移分数不证明性能正确，专用阈值/触发规则待单独需求时再审。 |
+| A 误差预算与不确定性传播 | 冻结选区含6条来源（3条`MethodSpec`、3条`OperatorSpec`）：确定性误差界、概率不确定度传播、问题条件性与算法稳定性、自适应误差控制、残差/后向误差审计、测量不确定度预算。它们的对象、前提、输出与证据合同不同；选区未提供统一的分支条件或组合协议，现有跨域线性步骤属于编辑综合而非来源共同定义的方法。因此撤回将其作为单一方法候选保留的初步倾向，暂不整体纳入，也不自动拆成6项。与历史候选D011“性能统计工具箱”、VC100“门槛导向抽样”、VC099“校准估计”相邻但不等同。重启需先明确学科专用范围及复核人，或冻结能定义适用分支、输入输出和组合规则的派生方法来源；拟议ID `gongfa-error-uncertainty-budget`尚未分配。 |
+| B 文献综合与证据缺口图谱 | 冻结选区只含`psoa.research.literature-synthesis`（`MethodSpec`）；原条目明确研究问题/范围、来源分层、主张与方法提取、异质性比较、支持/冲突/空白产物及停止条件。其跨研究综合不同于历史候选`psoa.research.source-criticism`的单来源质量审查，也不同于`gongfa-evidence-triangulation`的独立渠道交叉核验；在已检查的410条目录与Excel首轮对照中未见同等综合流程。因此语义上可保留为来源绑定的待审候选，但本轮快照用途仅为溯源与人工评审；是否写入机器登记仍须另行确认。外部引文、许可、效果及556→410全量语义去重均未验证；拟议ID `gongfa-literature-synthesis-evidence-gaps`尚未分配。 |
+| C 检索质量与证据覆盖审计 | 冻结投影仅含`psoa.information-knowledge-science.relevance-precision-recall-audit`（`OperatorSpec`）；其前提、步骤与产物支持对既有结果集按明确相关性规则和可用判断集审计precision/recall、排序及漏检。它不支持把信息需求制定、检索式扩展或证据检索循环一并包装进同一候选。与VC019“代码RAG”用途、VC065“Skill路由条件设计”中的指标使用边界相邻，但在已检查的410条目录与Excel首轮对照中未见同一审计算子；故语义上可保留为收窄后的来源绑定待审候选。机器登记仍需另行确认；首轮结果不等于556→410全量语义去重，许可、独立审查与效果未验证；拟议ID `gongfa-retrieval-quality-evidence-coverage`尚未分配。 |
+| D 摊销分析 | 对当前Solve记录`psoa.algorithms.amortized-analysis`的首轮对照显示：按状态操作序列推导摊销成本与总界，不同于“输入规模与复杂度约束”、阿姆达尔定律或利特尔法则；410条目录/Excel首轮检索未见同一推导流程。但该记录未进入项目冻结候选选区，所挂`ref:mit-algorithms`、`ref:cs2023`的具体版本、原文范围与许可未核验；摘要“平均代价”也需对照原文，避免误读为统计平均。故不判作重复，也暂不晋升为来源绑定候选或机器登记；待明确是否收录算法专用方法，并冻结精确来源选区后再审。 |
+| E 内核核验的证明证据 | 当前Solve记录`psoa.formal-logic-automated-reasoning.kernel-checked-proof-evidence`为`MethodSpec`，另有`psoa.formal-logic-automated-reasoning.formal-reasoning-loop`派生复合项；这里的“内核”指形式证明系统中的小型可信检查内核，不是操作系统内核。前者固定主张、上下文、公理、证明项与工具版本，再由内核/等价小检查器复核；通过仅支持给定形式语义下的证明，不证明规格表达了真实需求或实现满足需求。与现有“形式化方法（轻量形式化）”和“不变量检查”相关但不等同，本轮对410条目录的关键词与邻近条目首查未见相同的证明项内核核验流程；这不是556→410全量语义去重结论。它仍是形式证明工具链的专用证据方法；Solve记录未冻结进项目候选选区，Lean引用版本、原文范围及许可未核验，故本轮不独立登记；派生“形式推理循环”还需另审组成项与组合契约。 |
+| F 因果识别假设与敏感性审计 | 当前Solve候选涉及`causal-question-specification`、`target-trial-emulation`、`identification-assumption-audit`、`sensitivity-to-unmeasured-confounding`及派生`causal-inference-audit-loop`；目标试验模拟还依赖因果DAG模型。此前候选列出的四个ID没有冻结完整组合选区，不能把派生循环的步骤当成同一单源定义。与现有“近端因果机制”“反事实推理”“因果回路图”“数据分析陷阱清单”主题相邻但操作不同：本候选的辨别点是记录交换性/正值性/一致性/测量/选择假设及其依据，再按有据范围扫描未测混杂并报告结论翻转边界。它是高风险因果研究审计，不是通用编程流程；模型拟合不证明识别假设成立，敏感性参数无依据也不能制造精确结论。当前Solve包未冻结为项目候选选区，Harvard等来源引用、版本、原文范围与许可未核验；故暂不视为来源绑定候选或写入登记。重启需先确认因果研究方法的收录范围、冻结完整来源组合并安排领域复核。 |
+| G 分布漂移检测 / 分布外检查 | 当前Solve包分别给出`psoa.machine-learning.drift-detection`与`psoa.machine-learning.out-of-distribution-check`两个`OperatorSpec`：前者比较时间窗中的基线/当前输入、标签或错误分布并排除采样等混杂；后者针对输入与参考支持域校准阈值并绑定拒答/降级动作。两者不是同一操作；已有“拍扁”“受约束的状态变换”“有效知识子集”提及外推边界，但不是在线检测流程。官方[常见陷阱](https://scikit-learn.org/stable/common_pitfalls.html)涉及数据泄漏与新数据上的泛化，[学习/验证曲线](https://scikit-learn.org/stable/modules/learning_curve.html)涉及训练/验证表现；首轮抓取未见时间漂移检测程序。[模型选择索引](https://scikit-learn.org/stable/model_selection.html)也未直接提供该操作。[离群与新颖性检测](https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection)更接近“干净参考数据上判断新观察”的分布外子问题，但不等于一般化模型适用域保证，且不在冻结记录的source_refs中，不能追补为原来源。`confidence-escalation`（H）是响应路由，不检测漂移或分布外；OOD分数也不能直接当作正确率置信度。派生`generalization-validation-loop`不包含这两个Operator。完整源记录已冻结于`.github/metadata/gongfa/source-selected-candidates-20261014.txt`；引用键和当时映射已绑定，外部文档使用stable地址且版本、许可证未固定。快照只供审查，不分配项目ID、不写登记。后续需核对漂移基线/时间窗、标签可用性、阈值校准、误报漏报和降级责任；分布分数不证明正确性，未检出漂移也不证明仍有效。 |
+| H 置信度升级 | 当前Solve记录`psoa.machine-learning.confidence-escalation`是独立`OperatorSpec`：用独立校准集核对模型置信度与真实正确率，按风险/代价设阈值，再路由自动回答、拒答、降级或人工升级，并观察选择性风险与覆盖率。它不同于“Human in the Loop”的通用高风险/失败升级、“校准估计”对主观估计者的校准，也不同于派生`generalization-validation-loop`把校准作为验证步骤而不负责运行时动作路由；与G互补但不等价。首轮目录检索未见同一完整契约，非556→410全量语义去重结论。冻结记录引用的[学习/验证曲线](https://scikit-learn.org/stable/modules/learning_curve.html)和[模型选择索引](https://scikit-learn.org/stable/model_selection.html)未直接说明概率校准或风险路由；官方[概率校准文档](https://scikit-learn.org/stable/modules/calibration.html#calibrating-a-classifier)支持独立数据/CV拟合校准器，但不规定业务风险阈值、拒答/升级策略或覆盖率目标，且未列入该冻结记录的source_refs。故这些官方页面只支持相邻子步骤，不能证明完整H契约。完整记录已冻结于`.github/metadata/gongfa/source-selected-candidates-20261014.txt`；这是来源选区，不是项目候选登记，不分配项目ID。后续复核需核对文档版本与许可、标签/校准集独立性、风险阈值、误拒/漏放、覆盖率、成本和可用升级通道；源记录标为高风险，不把自报置信度当校准证据。 |
+
+| I 因果特征消融 | 冻结记录`psoa.machine-learning.causal-feature-ablation`（`.entries[15]`）为模型特征干预/消融的高风险`MethodSpec`。与现有“近端因果机制”“反事实推理”“因果回路图”相邻但不等同：消融可测模型对输入扰动的依赖，不能仅凭输出变化推出真实世界因果效应；原记录自身也警告单变量消融不是因果证明、干预可能生成分布外样本。其`source_refs`指向的`ref:sklearn-model-selection`页面导航列出交叉验证、调参和评分，`ref:mit-probability-inference`介绍一般估计/假设检验；首轮抓取内容未发现能支持完整因果特征干预流程或识别假设的原文。故该条在机制上可与现有条目区分，但来源支持不足且名称有过度声称风险；若目标只是模型依赖性，应考虑收窄为“特征干预敏感性审计”，若保留因果主张则需冻结目标、干预定义及识别假设并安排领域复核。本轮不合并、不分配项目ID、不登记或赋级；引用版本、许可证、效果及全量556→410去重仍未核验。有限来源选区见`.github/metadata/gongfa/source-selected-candidate-causal-feature-ablation-20261014.txt`。 |
 
 ##### 26个精确标题匹配的进一步核对
 
-> 24项可由既有冻结选区复核；另外2项仅由本轮本地全量导出定位，未纳入本次冻结选区，不据此建立新条目。
+> 24项可由既有冻结选区复核；另外2项现已由`source-selected-title-matches-20261014.txt`冻结精确Solve记录，供语义对照，不据此建立新条目。
 
 - 其中24项与`source-classified-candidates-20261007.json`的冻结Solve24选区具有相同`source_id`、相同原始pack SHA及相同完整JSON条目；它们已作为历史来源候选存在，不是新增功法或需要更新的第二版本。分组为：研究（来源批判、重复研究、预注册、代理指标—真实目标对齐审计）；计算机科学（不变量检查、接口契约、依赖图）；软件工程（架构权衡、增量开发、影响分析、风险驱动测试、事故复盘）；编程（二分调试、最小复现、模糊测试、性质测试、差分测试）；问题求解（手段—目的分析、选择性启发式搜索、构造性见证、元认知监控）；决策科学（信息价值、后悔与鲁棒决策）；工程（失败预演）。保留旧快照与意见，不因本轮全量索引而重建或提升状态。
-- `psoa.cognitive-science.metacognitive-monitoring`与既有`psoa.problem-solving-methodology.metacognitive-monitoring`标题相同，核心操作均为监控策略、进展和停止/切换条件；学科语境略有差别，但未显示独立机制，映射到既有条目，不另立身份。
-- `psoa.programming-principles-101.information-hiding`与历史`html96:VC004`虽同名，却不完全同义：VC004表达重要设计知识由单一模块拥有、减少跨模块依赖；Solve条目描述收窄公开承诺、隐藏易变实现并验证替换能力。属于相邻而非已证同一，暂缓独立候选，需先确认范围并冻结该条目的具体来源；不因标题相同而合并或新增。
+- `psoa.cognitive-science.metacognitive-monitoring`已在新快照冻结；历史候选`psoa.problem-solving-methodology.metacognitive-monitoring`绑定旧Solve pack SHA `ff2c226e4e43c1230864e88ffbfbba489b4a14a60dd52f663bba9eced34d46ad`的`/entries/7`。两者同属策略监控与继续/切换/停止控制；认知科学记录加入执行前预测、观察偏差和信心更新，旧记录更强调进展/成本、替代策略预期收益与阈值控制。已抓取其`ref:ramps-metareasoning`对应的[RAMPS论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC10302445/)：支持数学问题求解中的元认知监控/控制框架，也明确提醒监控可能无关而有害；论文自述该框架用于讨论拟议关系、适于后续讨论与可检验模型，并非已验证的线性路径。它不直接确立Solve记录的完整步骤或向一般软件任务的迁移。`ref:national-academies-metacognition`本轮返回HTTP 403，未核原文；许可证也未核。故视为强语义重叠、操作侧重不同的未决映射，不因标题合并，也不新增登记。
+- `psoa.programming-principles-101.information-hiding`已在新快照冻结；其扩展字段记有`source_principle: 3.14`，但这是源记录自身的映射声明。与现有候选`3.14 信息隐藏`“隐藏易变设计决策、公开稳定事实”高度相邻；新记录补充盘点调用者需要、迁移内部依赖和验证替换/错误路径，更像将该准则操作化，尚不足以证明独立功法。历史`html96:VC004`表达重要设计知识由单一模块拥有、减少跨模块依赖，是相邻的边界/所有权主张，不应因同名替代上述对照。其唯一`source_ref`映射为`conversation://programming-principles-101-materials`，本轮没有可核验的原始材料，来源摘要/许可无法独立检查；不合并旧候选，也不新登记，待获得可追溯正文和许可依据后再判。
 
 以上是候选主题级去重结果，不宣称556个来源ID与既有410条逐项语义去重完成；来源提取、候选主题映射、登记状态和效能证据分别计数。
 
