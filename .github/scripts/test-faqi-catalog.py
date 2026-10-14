@@ -155,15 +155,25 @@ class FaqiCatalogTest(unittest.TestCase):
         relative_path = Path(".github/tools/external/.tmux/LICENSE.MIT")
         body = (ROOT / relative_path).read_bytes()
         line_count = len(body.decode("utf-8").splitlines(keepends=True))
+        license_source_id = "S_TEST_LICENSE"
+        self.assertNotIn(license_source_id, {source["id"] for source in data["sources"]})
         license_source = {
-            "id": "S45", "purpose": "support", "path": relative_path.as_posix(),
+            "id": license_source_id, "purpose": "support", "path": relative_path.as_posix(),
             "repository": implementation["repository"], "revision": implementation["revision"],
             "sha256": hashlib.sha256(body).hexdigest(), "lines": [1, line_count + 1],
             "selection_sha256": hashlib.sha256(body).hexdigest(),
         }
         data["sources"].append(license_source)
-        next(item for item in data["objects"] if item["id"] == "faqi-oh-my-tmux")["support"].append("S45")
-        next(item for item in data["local_entries"] if item["path"] == ".github/tools/external/.tmux")["sources"].append("S45")
+        skill_object = next(
+            item for item in data["objects"] if item["id"] == "faqi-oh-my-tmux"
+        )
+        skill_object["support"].append(license_source_id)
+        local_entry = next(
+            item
+            for item in data["local_entries"]
+            if item["path"] == ".github/tools/external/.tmux"
+        )
+        local_entry["sources"].append(license_source_id)
         result = self.invoke("license-document-as-support", "--input", self.input_copy("license-support", data), "--check")
         self.assertEqual(0, result.returncode, result.stderr.decode())
         self.assertFalse(data["limits"]["license_approved"], "记录许可证原文不等于项目批准")

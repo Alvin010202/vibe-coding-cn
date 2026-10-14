@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-14T16:55:27Z",
+  "reviewed_at": "2026-10-14T22:41:44Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -796,6 +796,66 @@
       "sha256": "40820d20d8f56c1dc24c8f432141fa438d54473acbfecfa716fc9d188cbc8294",
       "lines": [45, 69],
       "selection_sha256": "e892c55c18d3d786696bf226eef30e4651216b0b71b89f35aa957f486ce0210f"
+    },
+    {
+      "id": "S45",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/src/skill_seekers/cli/main.py",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "8c02660dacd304f51fe8c4a9685d3f6d5324a7eef7779b6baa7325827bf01985",
+      "lines": [41, 66],
+      "selection_sha256": "67527b228def54d21c5adc56b822ae446b51e24d18b4ca82b4a66669ca184d17"
+    },
+    {
+      "id": "S46",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/src/skill_seekers/cli/agent_client.py",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "2fff7e6de630b6c8871db3419661195125c6128ac71d4d76f04e7561f7bdac17",
+      "lines": [35, 91],
+      "selection_sha256": "8273620e89e199a39cd5b2afd65dcfe4483d6b463ab3435f2dceb59270ec5a59"
+    },
+    {
+      "id": "S47",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/src/skill_seekers/cli/agent_client.py",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "2fff7e6de630b6c8871db3419661195125c6128ac71d4d76f04e7561f7bdac17",
+      "lines": [175, 200],
+      "selection_sha256": "e1dffcec8fd29c41210478f2516c1a970fa0082d0c5666b8f2f47657e7226608"
+    },
+    {
+      "id": "S48",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/src/skill_seekers/cli/agent_client.py",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "2fff7e6de630b6c8871db3419661195125c6128ac71d4d76f04e7561f7bdac17",
+      "lines": [286, 415],
+      "selection_sha256": "24bbde0e597053cc6a0430fb83f870b0007bc5d1fac7916645caa6687d65c153"
+    },
+    {
+      "id": "S49",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/src/skill_seekers/cli/install_skill.py",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "146be443d3b73b1e5c706b105fd0780831275baa6d0d61424b3c10d03dfa79aa",
+      "lines": [83, 156],
+      "selection_sha256": "5d2fde106240cae8b78d502c274a07a764ff5a2f4e745f3f5a977af08dae7cf5"
+    },
+    {
+      "id": "S50",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/src/skill_seekers/cli/upload_skill.py",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "2967da60c32c2495ea993f9122c6472d76ab86d3bcae878831fbeb07c55b0d1e",
+      "lines": [33, 89],
+      "selection_sha256": "1893b3f3bfc12dc0ef7ff0b2f2e94d1c72e216bd9d229037f8a8d70b7a18b2f5"
     }
   ],
   "objects": [
@@ -874,7 +934,13 @@
         "S14",
         "S15",
         "S42",
-        "S44"
+        "S44",
+        "S45",
+        "S46",
+        "S47",
+        "S48",
+        "S49",
+        "S50"
       ],
       "boundary": "指固定submodule修订的软件实现；多个CLI入口及可选MCP模块不机械复制产品身份。3.5.1仅为pyproject源码声明，不是已核发布或运行版。",
       "declared_version": "3.5.1（仅源码声明）"
@@ -1003,11 +1069,17 @@
         "S15",
         "S16",
         "S42",
-        "S44"
+        "S44",
+        "S45",
+        "S46",
+        "S47",
+        "S48",
+        "S49",
+        "S50"
       ],
       "boundary": "源码内容与仓库载体、接口规范、抓取过程、输入资料和生成Skill分开。",
       "pending": [
-        "CLI与MCP各实现的完整对应关系、许可/可用性与外部I/O权限未作完整审查。",
+        "2026-10-14：S45–S50绑定固定CLI路由、AgentClient与install/upload静态选区。CLI映射包含create/enhance/package/upload/install/install-agent等；AgentClient的auto模式按环境密钥选择API或本地代理，API路径将prompt发送给provider，本地subprocess.run未显式限制env；Claude预设含--dangerously-skip-permissions，Codex含--full-auto和--skip-git-repo-check。install将auto_upload设为默认true（可用--no-upload），upload路径调用目标adaptor并可从环境变量取key。仅静态审阅，未运行、联网、上传或读取凭据；完整MCP链路、数据范围/来源授权、子进程权限、环境隔离、外部与本地写入及恢复路径仍待审。",
         "仓库LICENSE标注MIT，但版权行保留[Your Name/Username]占位符；权利主体与授权未核，不作许可证批准依据。",
         "固定pyproject将PyMuPDF>=1.24.14列为核心依赖；2026-10-14本地Python 3.12.3环境未安装PyMuPDF（pip另有~umpy无效发行警告），运行/doctor/PDF路径未验证。这是环境观察，不等于上游实现缺陷。"
       ]
