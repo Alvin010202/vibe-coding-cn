@@ -1323,6 +1323,17 @@ entries[10..15]属于有限选区；本轮不遍历79条登记或410条历史候
 
 本轮仅审entries[0..3]及定向相邻内容，不覆盖entries[4..5]或其余556条Solve记录，也不代表556→410全量语义去重；不修改登记、候选JSON、总表或评级。来源页面未固定字节版本；独立审查、许可与效果未验证。
 
+##### 信息与知识科学Solve pack entries[4..5]有限对照
+
+字段投影、来源范围与限制见`.github/metadata/gongfa/source-selected-information-knowledge-science-entries-4-to-5-20261014.txt`。`metadata-and-fairness-check`的名称指FAIR元数据原则，但摘要又纳入社会公平/群体排除判断；NIST FAIR与DCAT支持可发现性、访问协议及目录元数据，不定义差别影响或公平审计流程，NIH页面本次返回403。若后续收窄为FAIR元数据检查仍需完整操作来源，不将FAIR缩写当作fairness证据。`evidence-retrieval-loop`是`origin=derived`的五项固定组合；来源只支持若干组件主题，未定义反馈/分支/再入规则、指标阈值与恢复合同，因此本轮仅作编辑性工作流草图，不单独登记。
+
+| Solve条目 | 对照与处理 |
+|---|---|
+| `metadata-and-fairness-check` | FAIR（可发现、可访问、可互操作、可复用）与社会公平不是同一概念。当前NIST/W3C来源支持元数据与访问关系，不支持群体差异影响评估；NIH正文未读取。本轮不新建候选或登记。 |
+| `evidence-retrieval-loop` | 派生组件编排与已登记总体交付/问题求解闭环相邻，但不是同一范围的直接等价；固定步骤及标题“Loop”不构成反馈合同。保留为编辑性工作流草图，不赋予独立方法身份。 |
+
+本批仅审entries[4..5]及定向相邻内容；与前批entries[0..3]合计覆盖该pack，不覆盖其他Solve pack或410条目录，也不代表556→410全量语义去重。没有修改登记、候选JSON、总表或评级；许可、独立审查与效果未验证。
+
 #### 与现有方法合并，不另建平行流程
 
 | 候选素材 | 处理方式 |

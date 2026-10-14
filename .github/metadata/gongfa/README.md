@@ -36,7 +36,8 @@
 - 继续审编程Solve pack末三条entries[15..17]：依赖最小化与胶水/依赖审查相邻但来源未支持具体方法合同；资源预算/停止语义属于横切约束，仍缺运行时方法来源；派生调试循环组合此前已审条目，不因此自动产生新身份。本轮不新增登记或评级。详见[有限复核](source-selected-programming-entries-15-to-17-20261014.txt)。
 - 首审问题求解方法论Solve pack entries[0..4]：任务定框并入问题界定闭环；问题空间与解空间边界相关但不相同；手段—目的和启发式搜索沿用历史候选意见；表征变换与Projection转换相邻。原文获取有限，不新增登记或评级。详见[有限语义复核](source-selected-problem-solving-methodology-entries-0-to-4-20261014.txt)。
 - 续审问题求解方法论Solve pack entries[5..8]：构造性见证与元认知监控沿用历史候选；回看评估作为检查阶段但未证明独立流程；派生通用循环不按固定顺序登记。Newell–Simon与Pólya来源不支持线性阶段解释，NIH/National Academies页面返回403；不新增候选、登记或评级。详见[有限语义复核](source-selected-problem-solving-methodology-entries-5-to-8-20261014.txt)。
-- 首审信息与知识科学Solve pack entries[0..3]：区分信息需求、检索式扩展、来源血缘与既有结果集评测；DCAT/PROV-DM/FAIR支持元数据与追溯结构，不等于来源权威或许可批准；TREC的检索Recall与回答引用支持度precision/recall不可混用。沿用候选C窄边界，不新增登记或评级；entries[4..5]未审。详见[有限语义复核](source-selected-information-knowledge-science-entries-0-to-3-20261014.txt)。
+- 首审信息与知识科学Solve pack entries[0..3]：区分信息需求、检索式扩展、来源血缘与既有结果集评测；DCAT/PROV-DM/FAIR支持元数据与追溯结构，不等于来源权威或许可批准；TREC的检索Recall与回答引用支持度precision/recall不可混用。沿用候选C窄边界，不新增登记或评级。详见[有限语义复核](source-selected-information-knowledge-science-entries-0-to-3-20261014.txt)。
+- 续审信息与知识科学Solve pack entries[4..5]：区分FAIR数据可复用原则与社会公平，NIST/DCAT不支持差别影响审计，NIH页面返回403；派生检索循环缺组合、反馈和停止合同，仅作编辑性草图。与前批合计覆盖该6条pack，但不代表556→410全量语义去重；不新增候选、登记或评级。详见[有限语义复核](source-selected-information-knowledge-science-entries-4-to-5-20261014.txt)。
 - 该pack的85条编号/标题结构交叉表显示85/85唯一映射到HTML历史候选且去章节号后标题一致；这是字段交叉核对，不是语义去重、来源独立证明或登记输入。当前85条记录均有直接语义对照（含此前单独审阅的信息隐藏3.14；本批7.7此前已审），但记录数不代表85个独立概念，也不代表556→410全量去重。
 - 完整可复用正文从[统一功法文集](../../docs/gongfa/README.md)进入；文集不等于独立功法记录。
 - [本体主文](../../docs/gongfa/cultivation-ontology-taxonomy.md#功法本体与品级)解释类型与语义；等级是分组，不是类型继承。
@@ -92,6 +93,7 @@ gongfa/
 ├── source-selected-problem-solving-methodology-entries-0-to-4-20261014.txt # 问题求解方法论pack前五条有限语义复核及来源摘录
 ├── source-selected-problem-solving-methodology-entries-5-to-8-20261014.txt # 问题求解方法论pack后四条有限语义复核及来源摘录
 ├── source-selected-information-knowledge-science-entries-0-to-3-20261014.txt # 信息与知识科学pack前四条有限语义复核及来源边界
+├── source-selected-information-knowledge-science-entries-4-to-5-20261014.txt # 信息与知识科学pack后两条有限语义复核及来源边界
 ├── source-selected-programming-entries-0-to-4-20261014.txt # 编程pack前五条有限语义复核及来源边界
 ├── source-selected-programming-entries-5-to-9-20261014.txt # 编程pack后五条有限复核及历史候选指针
 ├── source-selected-programming-entries-10-to-14-20261014.txt # 编程pack entries 10至14有限复核及历史候选指针
