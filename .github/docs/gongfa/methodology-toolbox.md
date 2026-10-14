@@ -1194,17 +1194,32 @@ SWEBOK v4.0a主题目录列出需求验证/追踪、软件架构、设计理由�
 
 ##### 软件工程Solve pack entries[5..9]有限对照
 
-有限选区见`.github/metadata/gongfa/source-selected-software-engineering-entries-5-to-9-20261014.txt`。entries[5]增量开发与entries[8]影响分析已在历史候选快照中保存同一pack SHA及旧意见；本轮仅新增entries[6]、[7]、[9]字段投影。结果如下：
+有限选区见`.github/metadata/gongfa/source-selected-software-engineering-entries-5-to-9-20261014.txt`。entries[5]增量开发与entries[8]影响分析已在历史候选快照中保存同一pack SHA及旧意见；该快照后续补查了官方CS2023 Software Engineering Version Gamma，补充来源及对本批entries[10..15]的核对见`.github/metadata/gongfa/source-selected-software-engineering-entries-10-to-15-20261014.txt`。补查不改写旧快照，只更新当前证据边界。本轮仅新增entries[6]、[7]、[9]字段投影。结果如下：
 
 | Solve条目 | 本轮处理 |
 |---|---|
-| `incremental-development` | 保留旧“优先候选”意见；辨别点应是可独立验证且保持可运行的纵向切片与集成边界，而非小步本身。与A085一步一步走高度相邻；分治和总体交付循环相关但不等同。原“实现→测试”次序不覆盖本仓测试先行要求。 |
-| `code-review` | Google官方概览支持由作者之外的人审查代码，并列出设计、功能、复杂度、测试等关注点；A084无我编程是评审行为准则，VC048独立产品测试是另一流程。pack里的finding分类、修订、复验序列未由所查概览逐步支持；“独立”限于非作者角色，不代表独立oracle。保留来源绑定待审候选，不登记。 |
-| `configuration-management` | SWEBOK主题目录涵盖配置项、baseline、变更控制、状态和发布管理；这不支持对所有prompt、model、tool、config和artifact无条件版本化。须收窄为影响复现/审计的受控配置与工件，并明确排除凭据、不可固定的远端状态等边界；目前范围过宽，不登记。 |
-| `impact-analysis` | 历史分析已与`gongfa-explicit-dependencies`对照，要求证明独立增量或作为相关来源；SWEBOK目录列出该主题，但不构成第二条登记依据。维持旧结论，不重复冻结。 |
-| `refactoring` | 当前定义为外部行为可冻结时的小步内部重组；与A079坏味调查、B015功能交付中的持续重构及总体交付流程相邻。现有引用仅支持维护/重构主题，尚未核得行为保持定义及具体操作的原始依据；保留待来源核实，不登记。 |
+| `incremental-development` | 保留旧“优先候选”意见；辨别点应是可独立验证且保持可运行的纵向切片与集成边界，而非小步本身。与A085一步一步走高度相邻；分治和总体交付循环相关但不等同。Gamma支持迭代与快速反馈，但不直接证明纵向切片、回滚证据或本条具体步骤。原“实现→测试”次序不覆盖本仓测试先行要求。 |
+| `code-review` | Google官方概览支持由作者之外的人审查代码并列出审阅关注点；CS2023 Gamma也列出合作编程中的code review。A084无我编程是评审行为准则，VC048独立产品测试是另一流程。pack里的finding分类、修订、复验序列未由所查概览逐步支持；“独立”限于非作者角色，不代表独立oracle。保留来源绑定待审候选，不登记。 |
+| `configuration-management` | SWEBOK主题目录及CS2023 Gamma支持配置管理、版本控制、配置项与可复现构建/配置；不支持对所有prompt、model、tool、config和artifact无条件版本化。须收窄为影响复现/审计的受控配置与工件，并明确排除凭据、不可固定的远端状态等边界；目前范围过宽，不登记。 |
+| `impact-analysis` | 历史分析已与`gongfa-explicit-dependencies`对照，要求证明独立增量或作为相关来源；SWEBOK列出该主题，Gamma的学习目标也要求根据新需求识别需修改的系统区域，但都不证明遍历依赖图或完整blast radius。维持旧结论，不重复冻结。 |
+| `refactoring` | 当前定义为外部行为可冻结时的小步内部重组；与A079坏味调查、B015功能交付中的持续重构及总体交付流程相邻。CS2023 Gamma支持重构接口实现时对既有用户影响最小或为零的行为保持目标；尚未证明Solve具体操作、范围和效果。前批“缺行为保持定义的直接来源”由此修正为“补充来源支持目标，精确契约/步骤仍待核实”；不登记。 |
 
-SWEBOK目录和Google代码评审概览是主题/页面级证据，不是固定修订快照，不能证明pack的完整流程、许可、独立审查或效果。五条`evidence_required`复用同一泛化清单，不能替代逐条证据合同。本批连同entries[0..4]仍只是有限邻项审查，不代表遍历79条登记或410条历史候选，也不构成556→410全量语义去重；没有新增登记、候选等级或正式效能评级。
+SWEBOK主题目录、Google概览及CS2023 Gamma只能支持列明的主题或学习目标。Gamma是官方软件工程子页列出的2023年8月版本，但并非Solve原`ref:cs2023`的同一固定来源；原Final Report URL本轮为404，Gamma仅作为补充。它们不能证明pack完整流程、许可、独立审查或效果。五条`evidence_required`复用同一泛化清单，不能替代逐条证据合同。本批连同entries[0..4]仍只是有限邻项审查，不代表遍历79条登记或410条历史候选，也不构成556→410全量语义去重；没有新增登记、候选等级或正式效能评级。
+
+##### 软件工程Solve pack entries[10..15]有限对照
+
+有限字段投影、来源摘录、时间点与SHA见`.github/metadata/gongfa/source-selected-software-engineering-entries-10-to-15-20261014.txt`。entry[12]风险驱动测试和entry[14]事故复盘沿用旧候选快照及意见；本轮只冻结entries[10]、[11]、[13]、[15]字段投影。CS2023 Gamma提供课程/学习目标层的补充，不证明完整方法、许可或效果。
+
+| Solve条目 | 对照与处理 |
+|---|---|
+| `observability` | 与`design-for-observability`共享核心，但entry[10]偏运行时事件、记录、关联和诊断，entry[15]偏设计阶段的观测需求、schema、边界和演练；可视为不同阶段，不因两个ID就算两个独立功法。Gamma支持日志、telemetry、监控与告警主题，不证明完整trace/决策记录契约。“Agent必须留下decision/tool/state trace”须收窄到任务需要，并受数据最小化、凭据/个人数据保护、保留期和成本约束。 |
+| `continuous-integration` | Gamma支持通过自动化和自动化测试初步验证共享head/trunk可构建并通过基本测试，因此CI不只适用于多人/多代理。小patch、频繁集成、失败即修复等更细条件未由该来源逐项支持；保留来源绑定待审候选，不登记。 |
+| `risk-based-testing` | 历史意见为暂缓另增、与`gongfa-failure-mode-analysis`对照。Gamma分别列出风险识别、测试计划和测试工具；ISO 29119介绍页说明测试过程/文档/设计技术，但所查介绍未给出风险排序及按风险分配测试深度的程序。未读取标准全文，不据此断言系列标准不含该内容；维持旧结论，不新增登记或评级。 |
+| `interface-segregation` | Gamma支持关注点分离、组件边界/依赖和API设计原则，但未明确接口隔离原则或consumer-usage matrix步骤。概念上可辨的操作候选仍缺精确来源支持；不另立登记或评级。原Solve引用的Final Report URL本轮为404，Gamma仅作补充。 |
+| `incident-postmortem` | 与事前失败模式分析不同，旧意见为优先候选；Gamma的可靠性/故障主题、SWEBOK及NIST页面均未在本轮证明完整的事故时间线、因果区分和行动项关闭程序。候选意见不是登记授权，继续待来源核验。 |
+| `design-for-observability` | entry[15]明确了设计阶段操作，但与entry[10]共享可观测性核心。先确定是同一方法的阶段化实例还是可独立方法，再决定身份/拆分；不能因字段更细而自动多登记。Gamma只支持telemetry等知识主题，演练效果未验证。 |
+
+entries[10..15]属于有限选区；本轮不遍历79条登记或410条历史候选，不代表556→410全量语义去重。所有候选处理均不新增登记、初评、正式评级或实际效果主张。
 
 #### 与现有方法合并，不另建平行流程
 

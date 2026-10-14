@@ -27,7 +27,8 @@
 - 另冻结entries[77..81]五条：康威定律作为组织/架构假设；破窗与熵增只作类比，不证明因果；80-10-10此前已审，本次不重复计数；约书亚树命名与概念工程/变量索引相邻。
 - 另冻结entries[82..84]三条：第二系统此前已审；重新造轮与胶水原则重叠；牦牛剃毛保留为问题栈/停止条件候选，不能中止必要硬依赖。
 - 另复核软件工程Solve pack entries[0..4]：架构权衡已在历史快照，设计理由与现有登记重叠；需求工程过宽，可追踪性需限定范围，验证与确认的精确定义仍待来源核对。仅冻结四条新字段投影，均不新增登记/评级；SWEBOK/NIST页面只支持主题范围，不证明精确步骤、许可或效果。详见[有限快照](source-selected-software-engineering-entries-0-to-4-20261014.txt)。
-- 续审软件工程Solve pack entries[5..9]：增量开发与影响分析沿用历史同源审阅；代码评审仅由Google概览支持作者外审查角色及关注点，配置管理须收窄版本化范围，重构仍缺行为保持定义的直接来源。仅冻结entries[6]、[7]、[9]投影，不新增登记/评级；SWEBOK/Google页面未固定修订，未证明精确步骤、许可或效果。详见[有限快照](source-selected-software-engineering-entries-5-to-9-20261014.txt)。
+- 续审软件工程Solve pack entries[5..9]：CS2023 Software Engineering Version Gamma（2023年8月）补充支持迭代/快速反馈、代码评审、配置管理与版本控制、按新需求识别待改区域，以及重构对既有用户影响最小的目标；这些是课程主题/学习目标，不证明完整操作、许可或效果。该Gamma PDF是补充来源，不等于Solve原`ref:cs2023`固定来源；前批快照保留原样，当前更新见后续批次快照。详见[entries 5–9有限审阅](source-selected-software-engineering-entries-5-to-9-20261014.txt)。
+- 另审软件工程Solve pack entries[10..15]：Gamma支持CI、组件边界/API原则及可靠性telemetry等主题，但不证明全部操作；风险驱动测试和事故复盘仍缺精确流程来源，接口隔离仍是待审候选，可观测性与可观测性设计需先判断身份/阶段关系。只冻结entries[10]、[11]、[13]、[15]投影，不新增登记/初评/评级；entries[12]、[14]沿用旧快照。详见[有限审阅与来源补充](source-selected-software-engineering-entries-10-to-15-20261014.txt)。
 - 该pack的85条编号/标题结构交叉表显示85/85唯一映射到HTML历史候选且去章节号后标题一致；这是字段交叉核对，不是语义去重、来源独立证明或登记输入。当前85条记录均有直接语义对照（含此前单独审阅的信息隐藏3.14；本批7.7此前已审），但记录数不代表85个独立概念，也不代表556→410全量去重。
 - 完整可复用正文从[统一功法文集](../../docs/gongfa/README.md)进入；文集不等于独立功法记录。
 - [本体主文](../../docs/gongfa/cultivation-ontology-taxonomy.md#功法本体与品级)解释类型与语义；等级是分组，不是类型继承。
@@ -82,6 +83,7 @@ gongfa/
 ├── source-selected-principle-operations-entries-82-to-84-20261014.txt # 三条编程原则语义对照及Solve字段投影
 ├── source-selected-software-engineering-entries-0-to-4-20261014.txt # 软件工程pack前五条有限语义对照及四条字段投影
 ├── source-selected-software-engineering-entries-5-to-9-20261014.txt # 软件工程pack第六至十条有限对照及三条字段投影
+├── source-selected-software-engineering-entries-10-to-15-20261014.txt # 软件工程pack后续六条有限对照及四条字段投影
 └── source-crosswalk-programming-principles-101-20261014.tsv # 85条标题/编号映射视图，不是登记或语义结论
 ```
 
