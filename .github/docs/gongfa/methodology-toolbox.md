@@ -928,7 +928,7 @@ README.md      # 概念表/错误语义/验收指标
 
 #### 候选交叉核对与本轮取舍（2026-10-13；2026-10-14补充）
 
-> 对照基线总表为410条（79条登记、331条历史来源候选）。下表把工具集候选P01–P32、已归一化的11项备忘录草稿和Solve A–G主题映射到现有登记及历史候选详情；P编号与11项草稿是同一批素材的不同整理视图，不重复计数。表中拟议ID不是已分配身份。Solve的556个ID已完成来源级导出，但未逐条与410条做完整语义比较；本轮补充对6项候选的主题粒度、相邻登记和冻结投影范围作定向核对，不构成全量语义去重。编号需严格区分：本体主文中的C01–C20是“分类验收判例”；不可变历史候选快照使用C001–C010、C012–C021（C011为排除视图），两者均不能据相近编号认作对话所指的候选包。当前仍未找到能绑定该候选包身份、定义与来源的独立冻结清单，故不声称已逐项裁决。候选状态不代表正式登记、类型确认、品级或效果。
+> 对照基线总表为410条（79条登记、331条历史来源候选）。下表把工具集候选P01–P32、已归一化的11项备忘录草稿和Solve A–J主题映射到现有登记及历史候选详情；P编号与11项草稿是同一批素材的不同整理视图，不重复计数。表中拟议ID不是已分配身份。Solve的556个ID已完成来源级导出，但未逐条与410条做完整语义比较；定向核对按批次覆盖A–J的候选主题、相邻条目与有限冻结选区（最初A–F共6项，后续追加G–J），不构成全量语义去重。编号需严格区分：本体主文中的C01–C20是“分类验收判例”；不可变历史候选快照使用C001–C010、C012–C021（C011为排除视图），两者均不能据相近编号认作对话所指的候选包。当前仍未找到能绑定该候选包身份、定义与来源的独立冻结清单，故不声称已逐项裁决。候选状态不代表正式登记、类型确认、品级或效果。
 
 | 工具集候选 | 对照与处理 |
 |---|---|
@@ -970,13 +970,14 @@ README.md      # 概念表/错误语义/验收指标
 | A 误差预算与不确定性传播 | 冻结选区含6条来源（3条`MethodSpec`、3条`OperatorSpec`）：确定性误差界、概率不确定度传播、问题条件性与算法稳定性、自适应误差控制、残差/后向误差审计、测量不确定度预算。它们的对象、前提、输出与证据合同不同；选区未提供统一的分支条件或组合协议，现有跨域线性步骤属于编辑综合而非来源共同定义的方法。因此撤回将其作为单一方法候选保留的初步倾向，暂不整体纳入，也不自动拆成6项。与历史候选D011“性能统计工具箱”、VC100“门槛导向抽样”、VC099“校准估计”相邻但不等同。重启需先明确学科专用范围及复核人，或冻结能定义适用分支、输入输出和组合规则的派生方法来源；拟议ID `gongfa-error-uncertainty-budget`尚未分配。 |
 | B 文献综合与证据缺口图谱 | 冻结选区只含`psoa.research.literature-synthesis`（`MethodSpec`）；原条目明确研究问题/范围、来源分层、主张与方法提取、异质性比较、支持/冲突/空白产物及停止条件。其跨研究综合不同于历史候选`psoa.research.source-criticism`的单来源质量审查，也不同于`gongfa-evidence-triangulation`的独立渠道交叉核验；在已检查的410条目录与Excel首轮对照中未见同等综合流程。因此语义上可保留为来源绑定的待审候选，但本轮快照用途仅为溯源与人工评审；是否写入机器登记仍须另行确认。外部引文、许可、效果及556→410全量语义去重均未验证；拟议ID `gongfa-literature-synthesis-evidence-gaps`尚未分配。 |
 | C 检索质量与证据覆盖审计 | 冻结投影仅含`psoa.information-knowledge-science.relevance-precision-recall-audit`（`OperatorSpec`）；其前提、步骤与产物支持对既有结果集按明确相关性规则和可用判断集审计precision/recall、排序及漏检。它不支持把信息需求制定、检索式扩展或证据检索循环一并包装进同一候选。与VC019“代码RAG”用途、VC065“Skill路由条件设计”中的指标使用边界相邻，但在已检查的410条目录与Excel首轮对照中未见同一审计算子；故语义上可保留为收窄后的来源绑定待审候选。机器登记仍需另行确认；首轮结果不等于556→410全量语义去重，许可、独立审查与效果未验证；拟议ID `gongfa-retrieval-quality-evidence-coverage`尚未分配。 |
-| D 摊销分析 | 对当前Solve记录`psoa.algorithms.amortized-analysis`的首轮对照显示：按状态操作序列推导摊销成本与总界，不同于“输入规模与复杂度约束”、阿姆达尔定律或利特尔法则；410条目录/Excel首轮检索未见同一推导流程。但该记录未进入项目冻结候选选区，所挂`ref:mit-algorithms`、`ref:cs2023`的具体版本、原文范围与许可未核验；摘要“平均代价”也需对照原文，避免误读为统计平均。故不判作重复，也暂不晋升为来源绑定候选或机器登记；待明确是否收录算法专用方法，并冻结精确来源选区后再审。 |
+| D 摊销分析 | 冻结记录`psoa.algorithms.amortized-analysis`（`.entries[0]`）是算法操作序列的成本上界方法；MIT 6.046J Lecture 5直接讲授aggregate、accounting、charging与potential方法，并明确摊销成本不必是统计平均；CS2023 Body of Knowledge第30页将其列为`AL-Complexity`的`KA Core`。原`ref:mit-algorithms`只指向课程主页，原`ref:cs2023` PDF URL当前返回404，替代官方BoK文件仅用于本次核对。总表Markdown/Excel关键词检索没有命中，不构成556→410全量语义去重；该方法不同于一般复杂度约束、阿姆达尔定律或利特尔法则。Solve摘要“平均代价”易与概率平均混淆，`agent loop`/缓存应用也未被算法讲义验证。故本轮只冻结来源供审查，不分配项目ID、不写机器登记或总表、不赋级；后续需修订来源绑定、核验版本/许可并限定软件应用成本合同。详见`.github/metadata/gongfa/source-selected-candidate-amortized-analysis-20261014.txt`。 |
 | E 内核核验的证明证据 | 当前Solve记录`psoa.formal-logic-automated-reasoning.kernel-checked-proof-evidence`为`MethodSpec`，另有`psoa.formal-logic-automated-reasoning.formal-reasoning-loop`派生复合项；这里的“内核”指形式证明系统中的小型可信检查内核，不是操作系统内核。前者固定主张、上下文、公理、证明项与工具版本，再由内核/等价小检查器复核；通过仅支持给定形式语义下的证明，不证明规格表达了真实需求或实现满足需求。与现有“形式化方法（轻量形式化）”和“不变量检查”相关但不等同，本轮对410条目录的关键词与邻近条目首查未见相同的证明项内核核验流程；这不是556→410全量语义去重结论。它仍是形式证明工具链的专用证据方法；Solve记录未冻结进项目候选选区，Lean引用版本、原文范围及许可未核验，故本轮不独立登记；派生“形式推理循环”还需另审组成项与组合契约。 |
 | F 因果识别假设与敏感性审计 | 当前Solve候选涉及`causal-question-specification`、`target-trial-emulation`、`identification-assumption-audit`、`sensitivity-to-unmeasured-confounding`及派生`causal-inference-audit-loop`；目标试验模拟还依赖因果DAG模型。此前候选列出的四个ID没有冻结完整组合选区，不能把派生循环的步骤当成同一单源定义。与现有“近端因果机制”“反事实推理”“因果回路图”“数据分析陷阱清单”主题相邻但操作不同：本候选的辨别点是记录交换性/正值性/一致性/测量/选择假设及其依据，再按有据范围扫描未测混杂并报告结论翻转边界。它是高风险因果研究审计，不是通用编程流程；模型拟合不证明识别假设成立，敏感性参数无依据也不能制造精确结论。当前Solve包未冻结为项目候选选区，Harvard等来源引用、版本、原文范围与许可未核验；故暂不视为来源绑定候选或写入登记。重启需先确认因果研究方法的收录范围、冻结完整来源组合并安排领域复核。 |
 | G 分布漂移检测 / 分布外检查 | 当前Solve包分别给出`psoa.machine-learning.drift-detection`与`psoa.machine-learning.out-of-distribution-check`两个`OperatorSpec`：前者比较时间窗中的基线/当前输入、标签或错误分布并排除采样等混杂；后者针对输入与参考支持域校准阈值并绑定拒答/降级动作。两者不是同一操作；已有“拍扁”“受约束的状态变换”“有效知识子集”提及外推边界，但不是在线检测流程。官方[常见陷阱](https://scikit-learn.org/stable/common_pitfalls.html)涉及数据泄漏与新数据上的泛化，[学习/验证曲线](https://scikit-learn.org/stable/modules/learning_curve.html)涉及训练/验证表现；首轮抓取未见时间漂移检测程序。[模型选择索引](https://scikit-learn.org/stable/model_selection.html)也未直接提供该操作。[离群与新颖性检测](https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection)更接近“干净参考数据上判断新观察”的分布外子问题，但不等于一般化模型适用域保证，且不在冻结记录的source_refs中，不能追补为原来源。`confidence-escalation`（H）是响应路由，不检测漂移或分布外；OOD分数也不能直接当作正确率置信度。派生`generalization-validation-loop`不包含这两个Operator。完整源记录已冻结于`.github/metadata/gongfa/source-selected-candidates-20261014.txt`；引用键和当时映射已绑定，外部文档使用stable地址且版本、许可证未固定。快照只供审查，不分配项目ID、不写登记。后续需核对漂移基线/时间窗、标签可用性、阈值校准、误报漏报和降级责任；分布分数不证明正确性，未检出漂移也不证明仍有效。 |
 | H 置信度升级 | 当前Solve记录`psoa.machine-learning.confidence-escalation`是独立`OperatorSpec`：用独立校准集核对模型置信度与真实正确率，按风险/代价设阈值，再路由自动回答、拒答、降级或人工升级，并观察选择性风险与覆盖率。它不同于“Human in the Loop”的通用高风险/失败升级、“校准估计”对主观估计者的校准，也不同于派生`generalization-validation-loop`把校准作为验证步骤而不负责运行时动作路由；与G互补但不等价。首轮目录检索未见同一完整契约，非556→410全量语义去重结论。冻结记录引用的[学习/验证曲线](https://scikit-learn.org/stable/modules/learning_curve.html)和[模型选择索引](https://scikit-learn.org/stable/model_selection.html)未直接说明概率校准或风险路由；官方[概率校准文档](https://scikit-learn.org/stable/modules/calibration.html#calibrating-a-classifier)支持独立数据/CV拟合校准器，但不规定业务风险阈值、拒答/升级策略或覆盖率目标，且未列入该冻结记录的source_refs。故这些官方页面只支持相邻子步骤，不能证明完整H契约。完整记录已冻结于`.github/metadata/gongfa/source-selected-candidates-20261014.txt`；这是来源选区，不是项目候选登记，不分配项目ID。后续复核需核对文档版本与许可、标签/校准集独立性、风险阈值、误拒/漏放、覆盖率、成本和可用升级通道；源记录标为高风险，不把自报置信度当校准证据。 |
 
 | I 因果特征消融 | 冻结记录`psoa.machine-learning.causal-feature-ablation`（`.entries[15]`）为模型特征干预/消融的高风险`MethodSpec`。与现有“近端因果机制”“反事实推理”“因果回路图”相邻但不等同：消融可测模型对输入扰动的依赖，不能仅凭输出变化推出真实世界因果效应；原记录自身也警告单变量消融不是因果证明、干预可能生成分布外样本。其`source_refs`指向的`ref:sklearn-model-selection`页面导航列出交叉验证、调参和评分，`ref:mit-probability-inference`介绍一般估计/假设检验；首轮抓取内容未发现能支持完整因果特征干预流程或识别假设的原文。故该条在机制上可与现有条目区分，但来源支持不足且名称有过度声称风险；若目标只是模型依赖性，应考虑收窄为“特征干预敏感性审计”，若保留因果主张则需冻结目标、干预定义及识别假设并安排领域复核。本轮不合并、不分配项目ID、不登记或赋级；引用版本、许可证、效果及全量556→410去重仍未核验。有限来源选区见`.github/metadata/gongfa/source-selected-candidate-causal-feature-ablation-20261014.txt`。 |
+| J 主动学习 | 冻结记录`psoa.machine-learning.active-learning`（`.entries[12]`）的主题可与`psoa.decision-science.value-of-information`及历史候选VC098“通用五步衡量法”区分：主动学习选择有限预算下用于训练模型的样本标签；信息价值衡量信息对决策损失/净效用的影响；VC098是更广的决策与信息衡量流程。三者共享信息获取与成本主题。Settles §5.3还把VOI列为成本敏感主动学习的一种路径，因此二者存在子场景重叠：用于选择训练标签并计入误分类成本的VOI属于主动学习查询策略，通用决策级VOI则不必然是主动学习；不按名称自动合并。原`source_refs`对应的scikit-learn模型选择索引和MIT推断课程未显示完整主动学习循环；补充核对Settles的[主动学习综述](https://minds.wisconsin.edu/handle/1793/60660)后，§1.1、§2.3及§3支持学习者选择待标注数据、池式查询循环与多类查询策略，§4.1也指出主动学习有时可能比被动随机采样需要更多标注。该综述未列在源记录原引用中，不证明普遍效果。原记录把“标签/测量”“检索/实验”和“模型/决策”混在一起，建议后续限定为监督学习标签查询，并追加可追溯的来源修订；本轮仅确认语义上可区分，不分配项目ID、不写机器登记/总表、不赋级。许可、独立领域审查与效果未核验。有限冻结选区见`.github/metadata/gongfa/source-selected-candidate-active-learning-20261014.txt`。 |
 
 ##### 26个精确标题匹配的进一步核对
 
@@ -985,6 +986,195 @@ README.md      # 概念表/错误语义/验收指标
 - 其中24项与`source-classified-candidates-20261007.json`的冻结Solve24选区具有相同`source_id`、相同原始pack SHA及相同完整JSON条目；它们已作为历史来源候选存在，不是新增功法或需要更新的第二版本。分组为：研究（来源批判、重复研究、预注册、代理指标—真实目标对齐审计）；计算机科学（不变量检查、接口契约、依赖图）；软件工程（架构权衡、增量开发、影响分析、风险驱动测试、事故复盘）；编程（二分调试、最小复现、模糊测试、性质测试、差分测试）；问题求解（手段—目的分析、选择性启发式搜索、构造性见证、元认知监控）；决策科学（信息价值、后悔与鲁棒决策）；工程（失败预演）。保留旧快照与意见，不因本轮全量索引而重建或提升状态。
 - `psoa.cognitive-science.metacognitive-monitoring`已在新快照冻结；历史候选`psoa.problem-solving-methodology.metacognitive-monitoring`绑定旧Solve pack SHA `ff2c226e4e43c1230864e88ffbfbba489b4a14a60dd52f663bba9eced34d46ad`的`/entries/7`。两者同属策略监控与继续/切换/停止控制；认知科学记录加入执行前预测、观察偏差和信心更新，旧记录更强调进展/成本、替代策略预期收益与阈值控制。已抓取其`ref:ramps-metareasoning`对应的[RAMPS论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC10302445/)：支持数学问题求解中的元认知监控/控制框架，也明确提醒监控可能无关而有害；论文自述该框架用于讨论拟议关系、适于后续讨论与可检验模型，并非已验证的线性路径。它不直接确立Solve记录的完整步骤或向一般软件任务的迁移。`ref:national-academies-metacognition`本轮返回HTTP 403，未核原文；许可证也未核。故视为强语义重叠、操作侧重不同的未决映射，不因标题合并，也不新增登记。
 - `psoa.programming-principles-101.information-hiding`已在新快照冻结；其扩展字段记有`source_principle: 3.14`，但这是源记录自身的映射声明。与现有候选`3.14 信息隐藏`“隐藏易变设计决策、公开稳定事实”高度相邻；新记录补充盘点调用者需要、迁移内部依赖和验证替换/错误路径，更像将该准则操作化，尚不足以证明独立功法。历史`html96:VC004`表达重要设计知识由单一模块拥有、减少跨模块依赖，是相邻的边界/所有权主张，不应因同名替代上述对照。其唯一`source_ref`映射为`conversation://programming-principles-101-materials`，本轮没有可核验的原始材料，来源摘要/许可无法独立检查；不合并旧候选，也不新登记，待获得可追溯正文和许可依据后再判。
+
+##### 编程原则pack中的五条近标题对照
+
+有限快照`.github/metadata/gongfa/source-selected-near-title-matches-20261014.txt`冻结了5条`programming-principles-101`记录，并对照候选历史快照中的A017、A032、A071、A097、A099。五条都保留相同主题核心，Solve记录增加了步骤、边界或验收表达；当前证据更支持“高度重叠或操作化”，不足以证明独立身份。它们不据此另行登记，也不推广为该pack其他未审记录的结论。Solve `source_refs`指向`conversation://`材料，原文、版本与许可未独立核验；历史HTML候选快照也不等于外部来源验证。名称相似只用于召回，判断依据是本次实际比较的定义与步骤。
+
+| Solve来源 | 对照历史候选 | 定向结论 |
+|---|---|---|
+| `logic-data-cohesion` | A017「3.7 逻辑与数据的一体化」 | 同一共同变化与边界收敛核心；Solve补充读写者清单、边界迁移及契约/序列化验证。 |
+| `nonfunctional-requirements` | A032「3.22 软件架构的非功能需求」 | 同一质量属性范围；Solve补充场景、阈值及设计/测试关联，历史项是复合候选。 |
+| `software-leverage` | A071「3.61 充分利用软件的杠杆效应」 | 同一复用和自动化核心；Solve补充许可、维护、行为验证与回滚边界。 |
+| `eighty-ten-ten-boundary-check` | A097「7.5 80-10-10原则」 | 同一工具尾部适用域审查；比例不是实测定律，Solve补充代表性场景和退出决策。 |
+| `second-system-control` | A099「7.7 第二系统综合征」 | 同一后续版本功能膨胀问题；Solve补充用户证据、核心/外围划分和回归。 |
+
+本对照只覆盖5条近标题命中，不替代556→410全量语义去重，也不据此认定源头相同、独立效果或可合并身份。
+
+##### 七条编程原则记录的操作化对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-20261014.txt`冻结Solve pack的2.1–2.7七条记录及对应历史候选A004–A010。逐项比较后，七条均与对应原则高度重叠：KISS/DRY/YAGNI/PIE/SLAP/OCP/命名的核心主张一致，Solve记录主要增加适用边界、步骤、反例或验证要求；OCP还明确以重复出现的真实变化为抽象依据，DRY明确区分共同知识与表面相似。现有材料更支持“原则的操作化表达”，不足以证明独立身份或共同外部来源；不批量登记、赋级或声称效果。原始来源、版本、许可和独立评审仍未核验。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `kiss`、`dry`、`yagni` | A004–A006 | 同一简化/单一知识/当前需求核心；操作化补充必要复杂度、语义耦合和现存契约边界。 |
+| `pie`、`slap`、`meaningful-naming` | A007、A008、A010 | 同一意图表达、抽象层次和命名核心；补充读者复述、行为回归、真实副作用与迁移检查。 |
+| `ocp` | A009 | 同一稳定核心与扩展边界；增加真实重复变化证据，避免为假想变化过早抽象。 |
+
+##### 编程原则3.2–3.10第二批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-2-to-3-10-20261014.txt`冻结8条记录：3.2–3.6、3.8–3.10；3.7「逻辑与数据的一体化」已在前述五条对照中审阅，本批不重复计数。`简洁`A013与KISS A004高度重叠，`重复最少化`A016与DRY A005高度重叠；`交流`A012与PIE A007强相关但范围较广。`灵活性`A014与OCP A009为一般适应性与具体扩展策略的关系；`效应局部化`A015与A017的共同变化/边界组织相关，但前者看影响传播范围，后者看数据与逻辑的共同所有权；`变动率`A020按变更历史识别边界，与前两者相关但判据不同。`对称性`A018关注成对操作的可类推性，`声明式表`A019关注意图/约束表达，两者是不同设计准则。上述“相关/不同”只描述本轮已读文本的语义范围；原文、版本、许可与独立领域审查未核验，均不因此独立登记或赋级。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `communication`、`simplicity`、`minimal-repetition` | A012、A013、A016 | 与交流表达/PIE、KISS、DRY高度相邻；后两者核心重叠明显，不能仅凭更细步骤另立平行身份。 |
+| `flexibility`、`effect-locality`、`change-rate` | A014、A015、A020 | 分别对应变化适应、影响传播半径、基于变更史的边界判据；有关联但对象/判据不同，不强行合并。 |
+| `symmetry`、`declarative-expression` | A018、A019 | 成对操作可类推性与声明式表示选择是不同准则；外部来源和独立身份仍待核。 |
+
+##### 编程原则3.12–3.21第三批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-12-to-3-21-20261014.txt`冻结9条记录：3.12、3.13、3.15–3.21；3.14信息隐藏已经在精确标题命中审阅中单独记录，不重复计数。`单一引用点`A030与DRY/重复最少化高度重叠；`分治`A031对应已登记`gongfa-divide-and-conquer`，不另建条目。`接口与实现的分离`A029与已登记`gongfa-stable-interface-contract`相关，但不是仅凭此字段即可合并的同一身份。`抽象`A022、`封装`A023、`打包`A025、`关注点分离`A026及其策略/接口分离子类，按对象与边界区分；抽象也不等同于已登记的`gongfa-validated-abstraction`。A027是API核心操作集的充足/完整/原始性约束，文本可辨但缺独立来源与可检验定义。九条的候选来源均未独立核验，不因此新增登记、评级或效果结论。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `single-source-of-truth`、`divide-and-conquer` | A030、A031 | 前者高度重叠DRY/重复最少化；后者与已登记`gongfa-divide-and-conquer`相同主题，Solve主要补充验证/组合步骤。 |
+| `abstraction`、`encapsulation`、`packaging` | A022、A023、A025 | 分别指共性提取、状态所有权、稳定模块聚合；相邻但不可互换。 |
+| `separation-of-concerns`、`strategy-implementation-separation`、`interface-implementation-separation` | A026、A028、A029 | 广义变化轴分离及两种具体边界；A029另与已登记稳定接口契约相关，均不凭近义批量登记。 |
+| `adequacy-completeness-primitiveness` | A027 | API核心操作集合的约束三元组；待核本体定义、来源与判定准则。 |
+
+##### 编程原则3.23–3.27第四批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-23-to-3-27-20261014.txt`冻结5条记录及对应历史候选A033–A037。3.23易变性、3.24互操作性、3.26可靠性与3.27可测试性在历史候选初评为设计准则；Solve将其操作化为`OperatorSpec`，不能凭结构化步骤就提升为独立方法。3.25效率性历史候选已关联`gongfa-performance-by-measurement`，Solve将测量基线、热点和回归流程化，当前更支持操作化而非平行登记。可靠性与`gongfa-controllable-failure`、互操作与`gongfa-stable-interface-contract`/`gongfa-glue-coding`、可测试性与轻量形式化/失败模式分析分别相邻但并非完全同一对象。五条原始来源、版本、许可与效果均未独立核验，不改登记、总表或评级。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `changeability`、`interoperability` | A033、A034 | 均为设计准则的操作化表达；互操作关注跨系统交换，与单接口契约、适配/编排相关但不等同。 |
+| `efficiency` | A035 | 已关联性能测量登记；扩展为测量—热点—复测流程，不新增平行身份。 |
+| `reliability`、`testability` | A036、A037 | 分别与故障可控/恢复、形式化/失败模式验证相邻；质量属性与具体操作流程分开，不强行合并。 |
+
+##### 编程原则3.28–3.33第五批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-28-to-3-33-20261014.txt`冻结pack `.entries[32..36]`及历史候选A038、A040–A043；3.29不在pack。3.30简单性原理与已审3.3简洁高度重叠；3.32对称原理与同pack 3.8对称性构成强语义重复，步骤差异是生命周期边界的细化，不应当作两个独立方法。3.31标题/编号匹配但历史候选讲问题结构与解决结构对应，Solve改为同类组件的形式统一，存在语义偏移；需查原文，不按字段覆盖。3.28可复用性与胶水原则/拼好码相关，重点不同在本地抽取共享能力的验证；3.33层次原理与SLAP相邻，但范围扩展到模块层次及成对资源操作。五条来源与许可未独立核验，本轮不新增登记、不改Solve上游。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `reusability` | A038 | 与胶水原则/拼好码共享复用主题；其“本地组件经多种应用验证后再提升共享能力”是不同决策点，仍属待审准则操作化。 |
+| `simplicity-principle` | A040 | 与同pack已审`simplicity`（3.3/A013）高度重叠；只作为重复/操作化记录，不平行登记。 |
+| `isomorphism-principle` | A041 | 标题/编号虽一致，历史定义和Solve操作对象不同；保留语义错位，等待原文来源核验。 |
+| `symmetry-principle` | A042 | 与同pack`symmetry`（3.8/A018）强重复；建议Solve上游后续合并并保留迁移映射，本仓不擅改上游。 |
+| `hierarchy-principle` | A043 | 与SLAP都处理抽象层次；SLAP限函数叙述层，本项增加模块层与资源配对，不强行视为同一条目。 |
+
+##### 编程原则3.34–3.39第六批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-34-to-3-39-20261014.txt`冻结pack `.entries[37..41]`及A044–A046、A048–A049；3.37不在pack。3.34线性原理与可推理代码的浅分支原则相关；3.36安全原理扩展异常/误用下的限制损害与安全停止，与故障控制及错误模式分析相邻但须独立风险审查。3.38模块化原则将边界、接口和组合检查流程化，不据此重复登记。3.35清晰原理存在定义错位：历史候选强调设计表达易读，Solve转为修改前的语境/根因理解；3.39清晰原则则是代码表示的可读性，与3.35同名但对象不同。来源引用、原文与许可未核验，不改登记或上游。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `linearity-principle` | A044 | 控制流直线化与浅分支/平逻辑相关；作为具体可读性检查，不另建独立登记。 |
+| `clarity-principle`（3.35） | A045 | 标题/编号吻合但语义偏移；回到可追溯原文核对，不将映射字段当定义。 |
+| `safety-principle` | A046 | 异常下限制损害和安全失败，与故障控制/失败模式分析相邻；高风险语义不凭文本登记。 |
+| `modularity-principle` | A048 | 模块边界和接口的准则操作化，与分解、契约、关注点分离相关但不自动合并。 |
+| `unix-clarity` | A049 | 维护者可读性与`gongfa-reasonable-code`高度相关；与3.35同名但不是同一语义。 |
+
+##### 编程原则3.40–3.44第七批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-40-to-3-44-20261014.txt`冻结pack `.entries[42..46]`及历史候选A050–A054。3.41策略/机制分离与3.18高度重复；3.42简单原则与3.3、3.30形成重复簇。3.40组合原则与胶水的选择—适配—编排有关但契约焦点更窄；3.43关注程序/模块规模控制，相关但不能按行数阈值机械拆分；3.44可观察性支持故障发现/定位，不等于完整故障处置，日志须受脱敏、保留和成本约束。来源原文、许可及效果未核验，不新增登记或修改Solve上游。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `composition-principle` | A050 | 稳定I/O、小契约及错误传播是组合能力的操作化，与胶水原则相邻，不另建重复身份。 |
+| `separation-principle` | A051 | 策略/机制变化边界与3.18高度重复；不因编号/步骤改写新登记。 |
+| `unix-simplicity` | A052 | 与3.30及3.3高度重叠；复杂度账本是操作细化，不平行登记。 |
+| `parsimony-principle` | A053 | 历史候选重小程序组合，Solve重模块/流程规模；相关但不等同，拒绝按行数机械拆分。 |
+| `transparency-principle` | A054 | 运行可观察与故障发现/定位相邻；脱敏、采样、保留及成本是必要边界，不把堆日志当效果。 |
+
+##### 编程原则3.45–3.49第八批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-45-to-3-49-20261014.txt`冻结pack `.entries[47..51]`及历史候选A055–A059。3.47最小意外原则与已登记`gongfa-least-surprise`直接重叠；3.45健壮性、3.49修复与可控故障/失败模式分析相邻但职责不一。3.46表达性涉及显式表达知识与规则数据化；3.48沉默原则涉及成功输出与诊断通道分离，不能误作关闭必要告警或审计。来源原文、许可及效果未核验，不新增登记或修改Solve上游。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `robustness-principle` | A055 | 抗错误能力与安全/可控故障相关，但不等于安全策略或失败分析，不重复立项。 |
+| `expressiveness-principle` | A056 | 显式表达知识、规则数据化，与可推理代码和机制解释相邻，暂不新建身份。 |
+| `least-surprise` | A057 | 与已登记`gongfa-least-surprise`同一核心主张；仅补充接口惯例检查和例外显式化。 |
+| `silence-principle` | A058 | 成功数据与诊断输出分流；保留强制错误、审计和安全事件。 |
+| `repair-principle` | A059 | 不可恢复失败时停止并保留状态/证据，与可控故障相邻，不代表完整恢复流程。 |
+
+##### 编程原则3.50–3.54第九批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-50-to-3-54-20261014.txt`冻结pack `.entries[52..56]`及历史候选A060–A064。3.52与已登记性能测量原则高度重叠；3.51与仓内源—规则—派生产物的生成实践相符，但本地实现不能反证外部来源身份。3.50把自动化成本主张扩展为工具/硬件/流程的总成本核算，需真实基线和退出测量；3.53只允许有证据的必要变体；3.54的插件/兼容扩展只针对已知扩展轴，不鼓励推测性抽象。来源原文、许可与效果未核，不新增登记。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `economy-principle` | A060 | 历史候选聚焦机器替代重复人工；Solve扩展总成本与机会成本，未有实测/来源证明，不新增身份。 |
+| `generation-principle` | A061 | 可机械生成的产物、单一来源及重建校验；与本仓生成视图实践相符，不把应用示例当外部来源证明。 |
+| `optimization-principle` | A062 | 与`gongfa-performance-by-measurement`高度重叠；基准、热点、重测和回归属操作化补充。 |
+| `diversity-principle` | A063 | 只为真实差异保留可选择和淘汰的变体，不把多样性扩成无限配置。 |
+| `extensibility-principle` | A064 | 版本/生命周期/错误契约与稳定接口相邻；须有真实扩展者和代表性用例，不按未来猜测建扩展点。 |
+
+##### 编程原则3.56–3.60第十批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-56-to-3-60-20261014.txt`冻结pack `.entries[57..61]`及A066–A070。A065/3.55 UNIX哲学在候选快照中被列为复合项，且不是Solve pack记录；它把小程序、单一职责、原型、可移植、文本数据等多个实践放在一起，但未见共同输入输出/适用分支合同，不能据此新建总功法或将其自动拆成正式子类。3.57与内聚/单一职责高度重叠；3.58是低成本验证不确定性的原型方法，与生产骨架要分开；3.59和3.60都保留性能、迁移、规模及消费者合同的例外。来源原文、许可及效果未核，不新增登记或改Solve。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `small-is-beautiful` | A066 | 小型可组合组件与内聚/单一职责相关，但规模不是行数门槛；不机械拆分。 |
+| `do-one-thing` | A067 | 单一职责与`gongfa-high-cohesion`的核心主张高度重叠，不重复登记。 |
+| `early-prototyping` | A068 | 方法型候选：以可丢弃实验验证高风险未知，不能外推成生产可用。 |
+| `portability-over-efficiency` | A069 | 隔离平台特化并测量锁定/迁移代价；需真实平台矩阵和基准，不作绝对规则。 |
+| `text-data` | A070 | 文本适合可读、审查和互操作场景；Schema、编码、版本、规模和安全要求决定例外。 |
+
+##### 编程原则3.61–3.64及4.1第十一批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-3-61-to-3-64-and-4-1-20261014.txt`冻结pack `.entries[62..66]`及A071–A075。3.61与`gongfa-glue-principle`高度重叠；3.62脚本方法、3.63非交互调用及3.64过滤器流各有安全/契约边界，不因A065复合候选而自动拼成单一方法。4.1内聚度候选与`gongfa-high-cohesion`重叠，Solve是责任检查操作化，不复刻未核验的完整分级体系。来源、许可和效果未核验，不新增登记或修改Solve。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `software-leverage` | A071 | 复用成熟能力与胶水原则同一核心；许可、供应链、试点和回滚是风险操作化。 |
+| `shell-glue` | A072 | 方法型候选，适用于固定命令编排；错误、输入、超时/清理和迁移语言均须明确。 |
+| `noninteractive-interface` | A073 | 自动化入口不能隐藏授权、确认、取消或安全语义，不等于去掉人工裁决。 |
+| `filter-oriented-design` | A074 | 标准输入/转换/输出流是具体组合方式；不是A065全部UNIX经验的证明。 |
+| `cohesion-audit` | A075 | 内聚检查步骤与`gongfa-high-cohesion`高度重叠；不把编辑性分级描述扩成新本体。 |
+
+##### 编程原则4.2–4.6第十二批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-4-2-to-4-6-20261014.txt`冻结pack `.entries[67..71]`及A076–A080。4.2耦合度与低耦合/显式依赖登记重叠；4.4可逆性与既有可逆决策重叠；4.6技术负债与技术债台账重叠。4.3正交性作为变化轴独立性的候选边界保留，但不等于零耦合或机械分层；4.5代码坏味保留为诊断方法，气味是调查信号而非自动重构授权。来源、许可及效果未独立核验，不新增登记或赋级。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `coupling-audit` | A076 | 与`gongfa-low-coupling`、`gongfa-explicit-dependencies`高度重叠；不追求零依赖或无收益抽象层。 |
+| `orthogonality-audit` | A077 | 检查变化轴能否独立演化；共同变化、性能与转换成本决定是否拆分。 |
+| `reversibility-audit` | A078 | 与`gongfa-reversible-decisions`高度重叠；概率×影响排序不能冒充校准数值，回滚须演练。 |
+| `code-smell-triage` | A079 | 方法型候选：从坏味调查根因，小步保持行为；不按清单自动重构。 |
+| `technical-debt-management` | A080 | 与`gongfa-technical-debt-ledger`高度重叠；利息是成本隐喻，不是固定增长定律。 |
+
+##### 编程原则entries[72..76]第十三批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-entries-72-to-76-20261014.txt`冻结pack `.entries[72..76]`及历史候选A082、A088、A090、A091、A093。契约式设计与不变式/接口契约登记重叠；橡皮鸭叙述与溯因调试相邻但不能替代实验。童子军规则限定为任务附近的小改动，不扩范围；dogfooding要满足安全数据和操作边界；布鲁克斯法则按关键路径、培训和并行性判断，不当普遍公式。来源、许可和效果未核，不新增登记或评级。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `boy-scout-improvement` | A082 | 单一低风险、邻近且可验证的小改善；不是顺手扩大范围或重写的授权。 |
+| `design-by-contract` | A088 | 与不变式和稳定接口契约高度重叠；外部输入校验与内部断言职责不同。 |
+| `dogfooding` | A090 | 指真实内部任务使用，不等同单元/集成测试；安全数据、权限和反馈隔离是前置条件。 |
+| `rubber-duck-debugging` | A091 | 外显假设、生成可检验断点；与溯因调试相邻，叙述不能当运行证据。 |
+| `brooks-law-response` | A093 | 复合候选；增员影响取决于任务依赖、培训和并行性，不把定性经验转成普遍人数公式。 |
+
+##### 编程原则entries[77..81]第十四批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-entries-77-to-81-20261014.txt`冻结pack `.entries[77..81]`及历史候选A094–A098。7.2康威定律作为组织/架构关系的可检验假设，不推出强制重组；7.3、7.4的破窗和熵增是类比性质量提醒，不是确定因果或物理量；7.5/entries[80]此前已在近标题快照审阅；7.6命名与概念工程及变量索引条目重叠。本批仅新增4条记录的语义对照，不重复计入7.5。来源、许可及效果未核，不新增登记。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `conway-law-alignment` | A094 | 检查组织/架构边界错位与跨组等待；先按可观测证据调整接口或交付流，不把重组当唯一解。 |
+| `broken-windows-repair` | A095 | 与小步改善、坏味诊断相邻；社会类比不证明因果，局部修复或登记须有范围。 |
+| `entropy-control` | A096 | 质量趋势是多个明确代理指标，不存在本条证明的统一代码熵测度；不据此发动大重写。 |
+| `eighty-ten-ten-boundary-check` | A097 | 7.5此前已审；本批只冻结字段，不重复计数；比例不是实测定律。 |
+| `joshua-tree-naming` | A098 | 通用领域词汇与`gongfa-concept-engineering`重叠，变量索引与`gongfa-symbol-name-index-maintenance`相邻；命名不能抹去语义差异。 |
+
+##### 编程原则entries[82..84]第十五批对照
+
+有限快照`.github/metadata/gongfa/source-selected-principle-operations-entries-82-to-84-20261014.txt`冻结pack `.entries[82..84]`及A099–A101。7.7第二系统此前已在近标题快照审阅；7.8重新造轮与胶水原则高度重叠；7.9牦牛剃毛保留为问题栈/停止条件方法候选，不能用停止偏航掩盖硬依赖或未达验收。此批仅新增7.8、7.9两条直接语义对照。来源、许可及效果仍未核，不新增登记。
+
+| Solve记录 | 历史候选 | 处理 |
+|---|---|---|
+| `second-system-control` | A099 | 与已审第二版功能膨胀控制同一核心；真实用户价值变化仍可按证据扩展。 |
+| `reinventing-the-wheel-check` | A100 | 与`gongfa-glue-principle`同一复用优先主张；调查、许可、供应链及退出条件是操作化补充。 |
+| `yak-shaving-recovery` | A101 | 方法型候选：记录前置问题栈、原始目标和停止条件；与问题定义/交付闭环相邻，不能停止必要硬依赖。 |
+
+##### `programming-principles-101` pack的85条编号映射
+
+只读交叉表`.github/metadata/gongfa/source-crosswalk-programming-principles-101-20261014.tsv`按Solve记录的`source_principle`字段，与冻结的`html211_candidates`编号标题作了结构匹配：85条Solve记录各自唯一映射到101条历史候选中的一条，删除标题前的章节编号后，85/85名称精确一致；16个未映射章节号列于交叉表头。该结果证明字段/标题映射完整，不证明语义同一或原始来源相同；`source_principle`仍是Solve记录自述，来源材料与许可未独立核验。交叉表捕获时点（13:41Z）已有6条直接语义对照（五条近标题记录及另行冻结的3.14信息隐藏）；此后另审2.1–2.7七条、3.2–3.10八条、3.12–3.21九条、3.23–3.27五条、3.28–3.33五条、3.34–3.39五条、3.40–3.44五条、3.45–3.49五条、3.50–3.54五条、3.56–3.60五条及3.61–3.64/4.1五条；其中3.61已在近标题快照直接对照，本批新增4条独立记录；再审4.2–4.6五条后累计74条；本批entries[72..76]另新增五条，共79/85条记录有直接语义对照；entries[77..81]再新增四条（7.5已审），共83条；entries[82..84]新增加7.8、7.9两条（7.7已审），至此85/85条记录均有直接语义对照。该数量按记录计，不等于85个独立概念，也不代表556→410候选与总表已全量去重。因此不得因映射结果批量合并、登记或赋级。交叉表仅供候选路由，不是登记源或生成总表输入。
 
 以上是候选主题级去重结果，不宣称556个来源ID与既有410条逐项语义去重完成；来源提取、候选主题映射、登记状态和效能证据分别计数。
 
