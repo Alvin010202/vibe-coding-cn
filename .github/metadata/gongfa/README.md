@@ -29,6 +29,7 @@
 - 另复核软件工程Solve pack entries[0..4]：架构权衡已在历史快照，设计理由与现有登记重叠；需求工程过宽，可追踪性需限定范围，验证与确认的精确定义仍待来源核对。仅冻结四条新字段投影，均不新增登记/评级；SWEBOK/NIST页面只支持主题范围，不证明精确步骤、许可或效果。详见[有限快照](source-selected-software-engineering-entries-0-to-4-20261014.txt)。
 - 续审软件工程Solve pack entries[5..9]：CS2023 Software Engineering Version Gamma（2023年8月）补充支持迭代/快速反馈、代码评审、配置管理与版本控制、按新需求识别待改区域，以及重构对既有用户影响最小的目标；这些是课程主题/学习目标，不证明完整操作、许可或效果。该Gamma PDF是补充来源，不等于Solve原`ref:cs2023`固定来源；前批快照保留原样，当前更新见后续批次快照。详见[entries 5–9有限审阅](source-selected-software-engineering-entries-5-to-9-20261014.txt)。
 - 另审软件工程Solve pack entries[10..15]：Gamma支持CI、组件边界/API原则及可靠性telemetry等主题，但不证明全部操作；风险驱动测试和事故复盘仍缺精确流程来源，接口隔离仍是待审候选，可观测性与可观测性设计需先判断身份/阶段关系。只冻结entries[10]、[11]、[13]、[15]投影，不新增登记/初评/评级；entries[12]、[14]沿用旧快照。详见[有限审阅与来源补充](source-selected-software-engineering-entries-10-to-15-20261014.txt)。
+- 另审软件工程Solve pack entry[16]：它是引用需求、追踪、增量开发、评审、配置管理和可观测性的`derived`组合；与已登记总体交付流程重心不同，但来源只有不可独立复核的conversation映射，且阶段合同、风险/验证证据、失败恢复仍不完整。不新增登记、初评或评级。详见[entry 16有限对照](source-selected-software-engineering-entry-16-20261014.txt)。
 - 该pack的85条编号/标题结构交叉表显示85/85唯一映射到HTML历史候选且去章节号后标题一致；这是字段交叉核对，不是语义去重、来源独立证明或登记输入。当前85条记录均有直接语义对照（含此前单独审阅的信息隐藏3.14；本批7.7此前已审），但记录数不代表85个独立概念，也不代表556→410全量去重。
 - 完整可复用正文从[统一功法文集](../../docs/gongfa/README.md)进入；文集不等于独立功法记录。
 - [本体主文](../../docs/gongfa/cultivation-ontology-taxonomy.md#功法本体与品级)解释类型与语义；等级是分组，不是类型继承。
@@ -84,6 +85,7 @@ gongfa/
 ├── source-selected-software-engineering-entries-0-to-4-20261014.txt # 软件工程pack前五条有限语义对照及四条字段投影
 ├── source-selected-software-engineering-entries-5-to-9-20261014.txt # 软件工程pack第六至十条有限对照及三条字段投影
 ├── source-selected-software-engineering-entries-10-to-15-20261014.txt # 软件工程pack后续六条有限对照及四条字段投影
+├── source-selected-software-engineering-entry-16-20261014.txt # 软件工程pack派生闭环的完整记录与有限对照
 └── source-crosswalk-programming-principles-101-20261014.tsv # 85条标题/编号映射视图，不是登记或语义结论
 ```
 
