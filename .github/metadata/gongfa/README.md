@@ -31,6 +31,7 @@
 - 另审软件工程Solve pack entries[10..15]：Gamma支持CI、组件边界/API原则及可靠性telemetry等主题，但不证明全部操作；风险驱动测试和事故复盘仍缺精确流程来源，接口隔离仍是待审候选，可观测性与可观测性设计需先判断身份/阶段关系。只冻结entries[10]、[11]、[13]、[15]投影，不新增登记/初评/评级；entries[12]、[14]沿用旧快照。详见[有限审阅与来源补充](source-selected-software-engineering-entries-10-to-15-20261014.txt)。
 - 另审软件工程Solve pack entry[16]：它是引用需求、追踪、增量开发、评审、配置管理和可观测性的`derived`组合；与已登记总体交付流程重心不同，但来源只有不可独立复核的conversation映射，且阶段合同、风险/验证证据、失败恢复仍不完整。不新增登记、初评或评级。详见[entry 16有限对照](source-selected-software-engineering-entry-16-20261014.txt)。
 - 另审编程Solve pack entries[0..4]：快反馈与既有总体流程/小步候选相邻，假设驱动调试与溯因排错高度重叠；二分调试是同ID历史候选，旧“优先候选”不是登记；Python 3.12.15文档只支持断点/单步等工具能力，不证明完整操作契约，Agent trace仍受来源和数据边界限制。仅限前五条，不新增登记、初评或评级；详见[有限语义复核](source-selected-programming-entries-0-to-4-20261014.txt)。
+- 续审编程Solve pack entries[5..9]：性能剖析是既有性能测量方法内的工具操作；最小复现与模糊测试沿用历史候选意见；静态分析及并发检测缺少可独立复核的来源。本轮只冻结entries[5]、[8]、[9]投影，entries[6]、[7]不重复复制或升级；不新增登记、初评或评级。详见[有限复核](source-selected-programming-entries-5-to-9-20261014.txt)。
 - 该pack的85条编号/标题结构交叉表显示85/85唯一映射到HTML历史候选且去章节号后标题一致；这是字段交叉核对，不是语义去重、来源独立证明或登记输入。当前85条记录均有直接语义对照（含此前单独审阅的信息隐藏3.14；本批7.7此前已审），但记录数不代表85个独立概念，也不代表556→410全量去重。
 - 完整可复用正文从[统一功法文集](../../docs/gongfa/README.md)进入；文集不等于独立功法记录。
 - [本体主文](../../docs/gongfa/cultivation-ontology-taxonomy.md#功法本体与品级)解释类型与语义；等级是分组，不是类型继承。
@@ -84,6 +85,7 @@ gongfa/
 ├── source-selected-principle-operations-entries-77-to-81-20261014.txt # 五条编程原则语义对照及Solve字段投影
 ├── source-selected-principle-operations-entries-82-to-84-20261014.txt # 三条编程原则语义对照及Solve字段投影
 ├── source-selected-programming-entries-0-to-4-20261014.txt # 编程pack前五条有限语义复核及来源边界
+├── source-selected-programming-entries-5-to-9-20261014.txt # 编程pack后五条有限复核及历史候选指针
 ├── source-selected-software-engineering-entries-0-to-4-20261014.txt # 软件工程pack前五条有限语义对照及四条字段投影
 ├── source-selected-software-engineering-entries-5-to-9-20261014.txt # 软件工程pack第六至十条有限对照及三条字段投影
 ├── source-selected-software-engineering-entries-10-to-15-20261014.txt # 软件工程pack后续六条有限对照及四条字段投影
