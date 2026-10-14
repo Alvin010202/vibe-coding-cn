@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-14T22:41:44Z",
+  "reviewed_at": "2026-10-14T23:09:49Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -1129,7 +1129,8 @@
       "boundary": "集合入口不等于法器身份；指令内容与脚本实现分别判断。",
       "pending": [
         "README明确部分文档Skill仅source-available，不能把整个集合称为同一开源许可证；skill-creator/LICENSE.txt提供Apache 2.0文本，但其附录版权字段为通用占位符，不能单独证明权利主体或完成全量许可审查。",
-        "本次不批准再分发/商用许可；其余辅助脚本未逐模块展开。"
+        "本次不批准再分发/商用许可。",
+        "2026-10-14：固定pin 1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563的S23（init_skill.py:194-303）静态复核：CLI提示skill_name应为小写kebab-case，但main未校验；函数直接拼接Path(path).resolve()/skill_name且未检查目标仍在指定父目录内，若调用方传入含../或绝对路径的名称，输出可越出预期目录。目录/模板创建中途失败只返回错误，不回滚部分输出。风险取决于调用方输入控制；未运行脚本、未创建测试文件，不作可利用性或运行安全结论。其余辅助脚本仍未逐模块展开。"
       ]
     },
     {

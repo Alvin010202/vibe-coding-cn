@@ -1297,6 +1297,19 @@ entries[10..15]属于有限选区；本轮不遍历79条登记或410条历史候
 
 本轮仅审problem-solving-methodology pack entries[0..4]及指定登记/历史对象；不扫描79条登记或410条历史候选，也不代表556→410全量语义去重；未修改登记或生成目录。
 
+##### 问题求解方法论Solve pack entries[5..8]有限对照
+
+字段投影与来源摘录见`.github/metadata/gongfa/source-selected-problem-solving-methodology-entries-5-to-8-20261014.txt`。entries[5]构造性见证和[7]元认知监控沿用历史候选指针；entry[6]回看评估可作为检查阶段，但未证明独立流程；entry[8]是源记录自述的派生组合，不作为独立方法。MIT课程页仅支持证明技术主题，Stanford ME113仅支持用户设计情境中的原型/测试；Newell与Simon 1970年文章反对把实际策略描述为线性序列，Pólya教学页也明确不要求阶段按固定顺序执行。NIH及National Academies来源本次返回403。未新增候选、登记或评级。
+
+| Solve条目 | 对照与处理 |
+|---|---|
+| `constructive-witness` | 是具体构造/原型操作，不等于完整解空间或总体问题求解法；历史候选的“优先”与暂定阶位不是登记或正式评级。现有来源仅支持证明技术/设计原型主题，不支持完整独立核验合同，沿用旧候选。 |
+| `look-back-evaluation` | 与Pólya回看、问题求解闭环的结果验证及工程反例驱动检查相邻；来源不支持其完整独立流程，不新增登记。 |
+| `metacognitive-monitoring` | 与`psoa.cognitive-science.metacognitive-monitoring`共享监控/控制核心，但前者偏预算与阈值，后者加入预测与信心更新；保留历史映射，不按标题机械合并或新增。 |
+| `general-problem-solving-loop` | `origin=derived`，拼接entries[0..7]；固定箭头不等于来源定义的线性流程，反馈、分支、回退和组合合同仍未建立，仅作编辑性综合。 |
+
+本轮只审entries[5..8]和定向登记/候选/来源；未扫描全部79条登记或410条目录，不代表556→410全量语义去重；未修改功法登记、候选JSON、总表或评级。
+
 #### 与现有方法合并，不另建平行流程
 
 | 候选素材 | 处理方式 |
