@@ -26,6 +26,7 @@
 - 另冻结entries[72..76]五条：契约设计与现有不变式/接口契约重叠；童子军规则受任务范围约束；内部测试指真实内部使用，橡皮鸭叙述不是证据；布鲁克斯法则须按任务依赖与并行性评估。
 - 另冻结entries[77..81]五条：康威定律作为组织/架构假设；破窗与熵增只作类比，不证明因果；80-10-10此前已审，本次不重复计数；约书亚树命名与概念工程/变量索引相邻。
 - 另冻结entries[82..84]三条：第二系统此前已审；重新造轮与胶水原则重叠；牦牛剃毛保留为问题栈/停止条件候选，不能中止必要硬依赖。
+- 另复核软件工程Solve pack entries[0..4]：架构权衡已在历史快照，设计理由与现有登记重叠；需求工程过宽，可追踪性需限定范围，验证与确认的精确定义仍待来源核对。仅冻结四条新字段投影，均不新增登记/评级；SWEBOK/NIST页面只支持主题范围，不证明精确步骤、许可或效果。详见[有限快照](source-selected-software-engineering-entries-0-to-4-20261014.txt)。
 - 该pack的85条编号/标题结构交叉表显示85/85唯一映射到HTML历史候选且去章节号后标题一致；这是字段交叉核对，不是语义去重、来源独立证明或登记输入。当前85条记录均有直接语义对照（含此前单独审阅的信息隐藏3.14；本批7.7此前已审），但记录数不代表85个独立概念，也不代表556→410全量去重。
 - 完整可复用正文从[统一功法文集](../../docs/gongfa/README.md)进入；文集不等于独立功法记录。
 - [本体主文](../../docs/gongfa/cultivation-ontology-taxonomy.md#功法本体与品级)解释类型与语义；等级是分组，不是类型继承。
@@ -78,6 +79,7 @@ gongfa/
 ├── source-selected-principle-operations-entries-72-to-76-20261014.txt # 五条编程原则语义对照及Solve字段投影
 ├── source-selected-principle-operations-entries-77-to-81-20261014.txt # 五条编程原则语义对照及Solve字段投影
 ├── source-selected-principle-operations-entries-82-to-84-20261014.txt # 三条编程原则语义对照及Solve字段投影
+├── source-selected-software-engineering-entries-0-to-4-20261014.txt # 软件工程pack前五条有限语义对照及四条字段投影
 └── source-crosswalk-programming-principles-101-20261014.tsv # 85条标题/编号映射视图，不是登记或语义结论
 ```
 
