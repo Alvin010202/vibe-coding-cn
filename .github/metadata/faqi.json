@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-11T15:45:18+00:00",
+  "reviewed_at": "2026-10-14T16:55:27Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -716,6 +716,86 @@
         120
       ],
       "selection_sha256": "4b4eb47d3545b5bcba80384c1aa81cee4d973d006736ea7a664f69ef9b759e70"
+    },
+    {
+      "id": "S37",
+      "purpose": "support",
+      "path": ".github/tools/external/.tmux/.tmux.conf",
+      "repository": ".github/tools/external/.tmux",
+      "revision": "87dcd13a28aeb5f18baee630e24b3f5765ae3a4f",
+      "sha256": "6807d44735b7b11e64c4488a0c3fdcbd2809cc73efedcc349d098e80a690aeeb",
+      "lines": [1, 8],
+      "selection_sha256": "e9e4b5dd6be906cfd6c4e4fe0a1063332cad79bf10898087c7c88eee87fb11aa"
+    },
+    {
+      "id": "S38",
+      "purpose": "support",
+      "path": ".github/tools/external/.tmux/LICENSE.MIT",
+      "repository": ".github/tools/external/.tmux",
+      "revision": "87dcd13a28aeb5f18baee630e24b3f5765ae3a4f",
+      "sha256": "f4c34427d3e29630cece9bca418eda48ac298867630cd6698d73e0f04642d1d0",
+      "lines": [1, 19],
+      "selection_sha256": "f4c34427d3e29630cece9bca418eda48ac298867630cd6698d73e0f04642d1d0"
+    },
+    {
+      "id": "S39",
+      "purpose": "support",
+      "path": ".github/tools/external/.tmux/LICENSE.WTFPLv2",
+      "repository": ".github/tools/external/.tmux",
+      "revision": "87dcd13a28aeb5f18baee630e24b3f5765ae3a4f",
+      "sha256": "ee820ff0db4ce628569e0975ac27dc926052a9f85d102b101edb104311ef4d90",
+      "lines": [1, 14],
+      "selection_sha256": "ee820ff0db4ce628569e0975ac27dc926052a9f85d102b101edb104311ef4d90"
+    },
+    {
+      "id": "S40",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/tmux.c",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "58a9bef0d1d424fd2e2a79c6d998dab96aab81ee771b7c2653928451f3bf11a8",
+      "lines": [1, 18],
+      "selection_sha256": "26f34506da997905b214b2878416c618a92298533aca335c60c509e5e0993904"
+    },
+    {
+      "id": "S41",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/COPYING",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "c031bd37f464c534277814f6aa38686fa023d094261d57fd2545ad592bb53ccd",
+      "lines": [1, 19],
+      "selection_sha256": "c031bd37f464c534277814f6aa38686fa023d094261d57fd2545ad592bb53ccd"
+    },
+    {
+      "id": "S42",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/LICENSE",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "d131d0e96700cd78f8b3fa7ed79a47b019a0653066500faff376233246b6504d",
+      "lines": [1, 22],
+      "selection_sha256": "d131d0e96700cd78f8b3fa7ed79a47b019a0653066500faff376233246b6504d"
+    },
+    {
+      "id": "S43",
+      "purpose": "support",
+      "path": ".github/tools/external/claude-official-skills/skills/skill-creator/LICENSE.txt",
+      "repository": ".github/tools/external/claude-official-skills",
+      "revision": "1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "lines": [1, 203],
+      "selection_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "id": "S44",
+      "purpose": "support",
+      "path": ".github/tools/external/Skill_Seekers-development/pyproject.toml",
+      "repository": ".github/tools/external/Skill_Seekers-development",
+      "revision": "26638b248279a3b001b651475e0f28975f5ff069",
+      "sha256": "40820d20d8f56c1dc24c8f432141fa438d54473acbfecfa716fc9d188cbc8294",
+      "lines": [45, 69],
+      "selection_sha256": "e892c55c18d3d786696bf226eef30e4651216b0b71b89f35aa957f486ce0210f"
     }
   ],
   "objects": [
@@ -792,7 +872,9 @@
       "implementation": "S16",
       "support": [
         "S14",
-        "S15"
+        "S15",
+        "S42",
+        "S44"
       ],
       "boundary": "指固定submodule修订的软件实现；多个CLI入口及可选MCP模块不机械复制产品身份。3.5.1仅为pyproject源码声明，不是已核发布或运行版。",
       "declared_version": "3.5.1（仅源码声明）"
@@ -804,7 +886,10 @@
       "implementation": "S18",
       "support": [
         "S17",
-        "S19"
+        "S19",
+        "S37",
+        "S38",
+        "S39"
       ],
       "boundary": "配置文件含run、cut|sh调用链及可执行shell指令，按实际程序内容归software-artifact，不能仅因.conf后缀归纯规约；不是tmux本身。",
       "declared_version": null
@@ -815,7 +900,9 @@
       "type_id": "software-artifact",
       "implementation": "S21",
       "support": [
-        "S20"
+        "S20",
+        "S40",
+        "S41"
       ],
       "boundary": "指固定源码修订的程序内容，不是物理终端、pane、socket地址或一次会话。Git describe的邻近tag不作为已核发布版本。",
       "declared_version": null
@@ -826,7 +913,8 @@
       "type_id": "software-artifact",
       "implementation": "S23",
       "support": [
-        "S22"
+        "S22",
+        "S43"
       ],
       "boundary": "只纳入skill-creator下生成目录/模板的独立Python程序，不把官方Skill集合、自然语言方法、模板或其他全部辅助脚本称作同一程序。",
       "declared_version": null
@@ -901,7 +989,6 @@
       ],
       "boundary": "Skill方法/规约、执行脚本、被依赖程序及运行入口分别指认。",
       "pending": [
-        "两个assets入口在source_revision 0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2处为零字节普通文件，与README/AGENTS声明的软链接不一致；references登记绑定该修订与空字节状态。为保留固定来源修订和原始摘要，本轮未替换；链接及上游源码可达性仍未解决。若修复，须追加可追溯来源修订并保留旧状态，不得静默改写。",
         "蜂群附属脚本不逐一登记，不启动蜂群，也不将蜂群状态/日志算软件。",
         "2026-10-13：将本工作分支内26个.sh入口的Git执行模式从100644改为100755；auto-tmux doctor、26个脚本bash -n及两个help入口通过。完整技能validator与tmux smoke未运行，运行效果仍待验证。"
       ]
@@ -914,11 +1001,15 @@
       "sources": [
         "S14",
         "S15",
-        "S16"
+        "S16",
+        "S42",
+        "S44"
       ],
       "boundary": "源码内容与仓库载体、接口规范、抓取过程、输入资料和生成Skill分开。",
       "pending": [
-        "CLI与MCP各实现的完整对应关系、许可/可用性与外部I/O权限未作完整审查。"
+        "CLI与MCP各实现的完整对应关系、许可/可用性与外部I/O权限未作完整审查。",
+        "仓库LICENSE标注MIT，但版权行保留[Your Name/Username]占位符；权利主体与授权未核，不作许可证批准依据。",
+        "固定pyproject将PyMuPDF>=1.24.14列为核心依赖；2026-10-14本地Python 3.12.3环境未安装PyMuPDF（pip另有~umpy无效发行警告），运行/doctor/PDF路径未验证。这是环境观察，不等于上游实现缺陷。"
       ]
     },
     {
@@ -929,7 +1020,10 @@
       "sources": [
         "S17",
         "S18",
-        "S19"
+        "S19",
+        "S37",
+        "S38",
+        "S39"
       ],
       "boundary": "配置数据与嵌入程序按实际所指区分；本条纳入可执行配置程序，未安装或source配置。",
       "pending": [
@@ -943,7 +1037,9 @@
       ],
       "sources": [
         "S20",
-        "S21"
+        "S21",
+        "S40",
+        "S41"
       ],
       "boundary": "tmux程序与配置、操控封装、终端会话和显示记录分开。",
       "pending": []
@@ -955,12 +1051,13 @@
       ],
       "sources": [
         "S22",
-        "S23"
+        "S23",
+        "S43"
       ],
       "boundary": "集合入口不等于法器身份；指令内容与脚本实现分别判断。",
       "pending": [
-        "README明确部分文档Skill仅source-available，不能把整个集合称为同一开源许可证；本次不批准再分发/商用许可。",
-        "其余辅助脚本未逐模块展开。"
+        "README明确部分文档Skill仅source-available，不能把整个集合称为同一开源许可证；skill-creator/LICENSE.txt提供Apache 2.0文本，但其附录版权字段为通用占位符，不能单独证明权利主体或完成全量许可审查。",
+        "本次不批准再分发/商用许可；其余辅助脚本未逐模块展开。"
       ]
     },
     {
@@ -1401,17 +1498,17 @@
     },
     {
       "path": ".github/skills/auto-tmux/assets/oh-my-tmux",
-      "state": "empty-placeholder",
-      "target": null,
-      "related_object_id": null,
-      "boundary": "实际Git模式100644、0字节；README称软链接，但此路径不能提供上游来源到达证据。"
+      "state": "symlink",
+      "target": "../../../tools/external/.tmux",
+      "related_object_id": "faqi-oh-my-tmux",
+      "boundary": "当前仓内相对软链接指向已登记的oh-my-tmux submodule；source_revision保留原零字节历史基线，链接状态不代表运行、许可或效果验证。"
     },
     {
       "path": ".github/skills/auto-tmux/assets/tmux-src",
-      "state": "empty-placeholder",
-      "target": null,
-      "related_object_id": null,
-      "boundary": "实际Git模式100644、0字节；独立tmux源码已按真实submodule审，不把占位文件算副本。"
+      "state": "symlink",
+      "target": "../../../tools/external/tmux",
+      "related_object_id": "faqi-tmux",
+      "boundary": "当前仓内相对软链接指向已登记的tmux submodule；source_revision保留原零字节历史基线，链接状态不代表运行、许可或效果验证。"
     }
   ]
 }
