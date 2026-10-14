@@ -1310,6 +1310,19 @@ entries[10..15]属于有限选区；本轮不遍历79条登记或410条历史候
 
 本轮只审entries[5..8]和定向登记/候选/来源；未扫描全部79条登记或410条目录，不代表556→410全量语义去重；未修改功法登记、候选JSON、总表或评级。
 
+##### 信息与知识科学Solve pack entries[0..3]有限对照
+
+字段投影、来源范围与限制见`.github/metadata/gongfa/source-selected-information-knowledge-science-entries-0-to-3-20261014.txt`。本批只审6条中的前4条：信息需求规约与问题界定框架相邻，但目录/评测来源不支持完整需求合同；检索式扩展没有被当前引用定义为通用操作；DCAT、PROV-DM及FAIR支持数据描述、血缘和可复用元数据，不等同于来源权威判断、证据独立性或许可批准。TREC 2025 RAG报告支持任务特定相关性判断和有限评测范围；检索结果的precision/recall不得与生成回答引用支持度的weighted precision/recall混用。
+
+| Solve条目 | 对照与处理 |
+|---|---|
+| `information-need-formulation` | 与问题界定相邻；当前来源支持检索任务与目录描述主题，不支持条目所列的完整需求规约顺序、证据标准或停止条件。本轮不登记。 |
+| `retrieval-query-expansion` | 同信息需求和检索审计边界分开；TREC How-to和DCAT不是扩词方法来源，其他文档不替原引用补证。本轮不登记。 |
+| `source-authority-and-provenance` | DCAT/PROV-DM/FAIR支持元数据与派生关系表达，不证明来源按用途的权威等级、独立性或许可批准；与证据三角测量保留边界，本轮不登记。 |
+| `relevance-precision-recall-audit` | 保留既有候选C的窄边界：仅审既有结果集和可用判断集，不扩展为需求制定、查询扩展或完整检索流程。TREC 2025 report展示nDCG/Recall及有限人工qrels；其引用支持precision/recall属另一评估对象。候选仍未进入登记。 |
+
+本轮仅审entries[0..3]及定向相邻内容，不覆盖entries[4..5]或其余556条Solve记录，也不代表556→410全量语义去重；不修改登记、候选JSON、总表或评级。来源页面未固定字节版本；独立审查、许可与效果未验证。
+
 #### 与现有方法合并，不另建平行流程
 
 | 候选素材 | 处理方式 |

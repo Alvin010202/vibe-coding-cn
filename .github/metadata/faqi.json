@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-14T23:09:49Z",
+  "reviewed_at": "2026-10-14T23:28:07Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -856,6 +856,16 @@
       "sha256": "2967da60c32c2495ea993f9122c6472d76ab86d3bcae878831fbeb07c55b0d1e",
       "lines": [33, 89],
       "selection_sha256": "1893b3f3bfc12dc0ef7ff0b2f2e94d1c72e216bd9d229037f8a8d70b7a18b2f5"
+    },
+    {
+      "id": "S51",
+      "purpose": "support",
+      "path": ".github/tools/external/claude-official-skills/skills/skill-creator/SKILL.md",
+      "repository": ".github/tools/external/claude-official-skills",
+      "revision": "1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563",
+      "sha256": "d57b6e3a44535b9c0ef454dad5c86f5df78185fc80a65c7092885b4b5e10f81b",
+      "lines": [263, 275],
+      "selection_sha256": "a8130ff1f013777e2c076569f5567924a4a0f3b23df7134ab4b0b99dd1aa86e9"
     }
   ],
   "objects": [
@@ -980,7 +990,8 @@
       "implementation": "S23",
       "support": [
         "S22",
-        "S43"
+        "S43",
+        "S51"
       ],
       "boundary": "只纳入skill-creator下生成目录/模板的独立Python程序，不把官方Skill集合、自然语言方法、模板或其他全部辅助脚本称作同一程序。",
       "declared_version": null
@@ -1124,12 +1135,14 @@
       "sources": [
         "S22",
         "S23",
-        "S43"
+        "S43",
+        "S51"
       ],
       "boundary": "集合入口不等于法器身份；指令内容与脚本实现分别判断。",
       "pending": [
         "README明确部分文档Skill仅source-available，不能把整个集合称为同一开源许可证；skill-creator/LICENSE.txt提供Apache 2.0文本，但其附录版权字段为通用占位符，不能单独证明权利主体或完成全量许可审查。",
         "本次不批准再分发/商用许可。",
+        "S51绑定skill-creator/SKILL.md步骤3和调用形式，证实该文档要求执行S23；它不验证S23实际输入校验或路径限制，且本次未执行脚本。",
         "2026-10-14：固定pin 1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563的S23（init_skill.py:194-303）静态复核：CLI提示skill_name应为小写kebab-case，但main未校验；函数直接拼接Path(path).resolve()/skill_name且未检查目标仍在指定父目录内，若调用方传入含../或绝对路径的名称，输出可越出预期目录。目录/模板创建中途失败只返回错误，不回滚部分输出。风险取决于调用方输入控制；未运行脚本、未创建测试文件，不作可利用性或运行安全结论。其余辅助脚本仍未逐模块展开。"
       ]
     },
