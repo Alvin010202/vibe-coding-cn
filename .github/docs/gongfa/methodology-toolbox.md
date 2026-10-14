@@ -1229,6 +1229,20 @@ entries[10..15]属于有限选区；本轮不遍历79条登记或410条历史候
 
 本次至此对软件工程pack entries[0..16]均有有限批次或历史候选审阅记录，但不是逐条独立来源认证，不代表其他Solve领域或556→410全量语义去重。未修改登记或生成目录。
 
+##### 编程Solve pack entries[0..4]有限对照
+
+有限选区、字段投影与来源指纹见`.github/metadata/gongfa/source-selected-programming-entries-0-to-4-20261014.txt`。五条均引用`conversation://cross-domain-method-map`和Python调试文档；前者没有可独立读取的固定正文。版本化的Python 3.12.15文档支持调试器单步、栈帧、断点及profiling工具能力，但不证明这些条目的完整方法契约、许可或效果。
+
+| Solve条目 | 对照与处理 |
+|---|---|
+| `tight-feedback-loop` | 与已登记`gongfa-methodology-delivery-loop`的检查器、最小实现和反例验证相邻，也与历史候选“5.5 一步一步走”相邻；不因“立即验证”另立总流程。 |
+| `hypothesis-driven-debugging` | 与已登记`gongfa-abductive-debugging`的候选原因、区分性实验及证据更新高度重叠；显式可证伪假设作为操作约束，不新增平行登记。 |
+| `binary-search-debugging` | 与历史候选中同ID、同pack SHA的记录相同，旧“优先候选”意见不是登记。Python调试文档不支持二分定位，且扩展到pipeline、prompt或context的固定来源缺失；保留历史意见，不用本轮补证。 |
+| `breakpoint-single-step` | Python文档支持通用调试器操作，但不支持对Agent workflow逐节点应用的完整操作和验收契约；作为工具操作候选，不登记。 |
+| `tracing` | 文档对运行期可见性仅有相邻支持，未定义跨组件关联、完整Agent trace契约；声明的完整action/tool/state记录还须受数据最小化、敏感值、访问、保留与成本约束。保留待审，不登记。 |
+
+这些条目复用同一泛化`evidence_required`，不能代替逐项效果证据。仅审programming pack entries[0..4]及快照列明的邻项；entry[2]旧记录保留不覆盖，本轮不修改登记或目录，也不代表扫描其余pack、79条登记、410条历史候选或完成556→410全量语义去重。
+
 #### 与现有方法合并，不另建平行流程
 
 | 候选素材 | 处理方式 |
