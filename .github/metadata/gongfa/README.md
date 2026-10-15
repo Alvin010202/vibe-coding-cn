@@ -6,6 +6,7 @@
 - [registry.json](registry.json)是功法条目唯一可编辑数据源；`entry_status`区分已登记与待评候选，候选不等于正式登记。历史来源候选仍保存在不可变快照，不因快照存在自动入登记。
 - 2026-10-07两批共登记79条：仓内来源62条（首批41条、续收21条）＋指定项目页面17条；两批初评分别覆盖58条与21条。拼好码于2026-10-11按用户指令由地阶中级暂定调整为天阶高级暂定，历史值与理由见文件末尾审计。
 - 截至2026-10-14，3条备忘录与3条早期Solve候选素材均未写入登记JSON或生成总表；定向语义复核将P15暂列为能力/学习框架，确认Solve候选A为6来源跨域合成且暂不作为单一方法候选；B可保留为来源绑定的待审候选但未进入机器登记；C收窄为审计既有检索结果集的单一`OperatorSpec`候选，不包括检索构造或执行。B/C写入机器登记均需另行确认。同日另冻结机器学习来源包中的漂移检测、分布外检查和置信度升级3条`OperatorSpec`，仅供来源追溯与人工复核；首轮对照官方stable文档发现原引用对完整操作契约仅有相邻支持，来源版本、许可与效果未验证，不进入登记或总表。另冻结此前仅由本地全量导出定位的2条同名Solve记录，供与既有候选逐项比较，未决定合并或登记。详细范围与未决事项见[候选方法整理稿及交叉核对](../../docs/gongfa/methodology-toolbox.md#philosophy-methodology-toolbox-候选方法整理稿)。
+- 2026-10-15续审P19“最小模型—迁移—边界回填”：有限类比研究支持关系结构映射及对推论结构支持、目标域事实和任务相关性的分别核验；不支持该完整操作序列的来源归属或软件工程效果。编辑稿已澄清映射与验证边界，候选仍源自仓内备忘录，未分配ID、未写登记/总表或赋级。快照见[source-selected-candidate-minimal-model-transfer-boundaries-20261015.txt](source-selected-candidate-minimal-model-transfer-boundaries-20261015.txt)；本次不是556→410全量语义去重。
 - 两批入库初评的原始分布为黄7、玄47、地25、天0；这是修订前历史记录，不代表当前分布，也不是效果实测。
 - 另于2026-10-14冻结Solve机器学习包中的`因果特征消融`来源记录，供因果语义与来源支持复核；两条`source_refs`目前仅有相邻支持，消融结果不自动构成因果证据，不进入登记或总表。
 - 同日冻结`主动学习`来源记录：与通用“信息价值”相关但不完全等同；成本敏感的VOI可成为主动学习的查询策略。原引用未支持完整标签选择循环，补充综述不属于原引用，需新来源修订。本轮不进入登记或总表、不赋级，详见有限选区快照。
@@ -73,6 +74,7 @@ gongfa/
 ├── source-selected-candidate-causal-feature-ablation-20261014.txt # 因果特征消融来源记录的有限评审选区
 ├── source-selected-candidate-active-learning-20261014.txt # 主动学习来源记录的有限评审选区
 ├── source-selected-candidate-amortized-analysis-20261014.txt # 摊销分析来源记录的有限评审选区
+├── source-selected-candidate-minimal-model-transfer-boundaries-20261015.txt # P19与类比研究的有限来源对照，不新增登记或效果证据
 ├── source-selected-title-matches-20261014.txt # 两条同名命中来源的有限冻结选区
 ├── source-selected-near-title-matches-20261014.txt # 五条编程原则近标题命中的有限冻结选区
 ├── source-selected-principle-operations-20261014.txt # 七条编程原则操作化对照及完整Solve记录
