@@ -1125,7 +1125,9 @@
         "S41"
       ],
       "boundary": "tmux程序与配置、操控封装、终端会话和显示记录分开。",
-      "pending": []
+      "pending": [
+        "S40仅绑定tmux.c文件头许可选区；S41明确COPYING仅供信息参考，代码许可依各文件头（README/CHANGES/FAQ/TODO另述ISC）。尚未逐文件审计固定pin全树、第三方内容与再分发兼容性；limits.license_approved仍为false。"
+      ]
     },
     {
       "path": ".github/tools/external/claude-official-skills",

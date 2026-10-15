@@ -8,6 +8,7 @@
 - 截至2026-10-14，3条备忘录与3条早期Solve候选素材均未写入登记JSON或生成总表；定向语义复核将P15暂列为能力/学习框架，确认Solve候选A为6来源跨域合成且暂不作为单一方法候选；B可保留为来源绑定的待审候选但未进入机器登记；C收窄为审计既有检索结果集的单一`OperatorSpec`候选，不包括检索构造或执行。B/C写入机器登记均需另行确认。同日另冻结机器学习来源包中的漂移检测、分布外检查和置信度升级3条`OperatorSpec`，仅供来源追溯与人工复核；首轮对照官方stable文档发现原引用对完整操作契约仅有相邻支持，来源版本、许可与效果未验证，不进入登记或总表。另冻结此前仅由本地全量导出定位的2条同名Solve记录，供与既有候选逐项比较，未决定合并或登记。详细范围与未决事项见[候选方法整理稿及交叉核对](../../docs/gongfa/methodology-toolbox.md#philosophy-methodology-toolbox-候选方法整理稿)。
 - 2026-10-15续审P19“最小模型—迁移—边界回填”：有限类比研究支持关系结构映射及对推论结构支持、目标域事实和任务相关性的分别核验；不支持该完整操作序列的来源归属或软件工程效果。编辑稿已澄清映射与验证边界，候选仍源自仓内备忘录，未分配ID、未写登记/总表或赋级。快照见[source-selected-candidate-minimal-model-transfer-boundaries-20261015.txt](source-selected-candidate-minimal-model-transfer-boundaries-20261015.txt)；本次不是556→410全量语义去重。
 - 2026-10-15续审Solve计算机科学pack entries[0..4]：CS2023官方课程页与报告仅支持算法策略主题，不证明Agent泛化操作或效果。抽象是视角、问题分解是流程中间产物；归约和动态规划保留窄边界待审；分治与已登记方法重叠，不重复登记。未改registry或总表，有限快照见[source-selected-computer-science-entries-0-to-4-20261015.txt](source-selected-computer-science-entries-0-to-4-20261015.txt)，不代表556→410全量去重。
+- 2026-10-15续审Solve计算机科学pack entries[5..9]：CS2023支持贪心、回溯、分支定界和算法复杂度课程主题，不支持Agent完整操作合同；NIST形式化方法词条仅支持广义定义。贪心需局部选择性质/近似界；回溯和分支定界需明确状态、撤销/剪枝正确性与预算；复杂度需分开渐近分析和token/latency/成本测量；形式化方法与已登记轻量形式化高度相关。未新增登记、候选或评级；快照见[source-selected-computer-science-entries-5-to-9-20261015.txt](source-selected-computer-science-entries-5-to-9-20261015.txt)，不代表556→410全量去重。
 - 两批入库初评的原始分布为黄7、玄47、地25、天0；这是修订前历史记录，不代表当前分布，也不是效果实测。
 - 另于2026-10-14冻结Solve机器学习包中的`因果特征消融`来源记录，供因果语义与来源支持复核；两条`source_refs`目前仅有相邻支持，消融结果不自动构成因果证据，不进入登记或总表。
 - 同日冻结`主动学习`来源记录：与通用“信息价值”相关但不完全等同；成本敏感的VOI可成为主动学习的查询策略。原引用未支持完整标签选择循环，补充综述不属于原引用，需新来源修订。本轮不进入登记或总表、不赋级，详见有限选区快照。
@@ -77,6 +78,7 @@ gongfa/
 ├── source-selected-candidate-amortized-analysis-20261014.txt # 摊销分析来源记录的有限评审选区
 ├── source-selected-candidate-minimal-model-transfer-boundaries-20261015.txt # P19与类比研究的有限来源对照，不新增登记或效果证据
 ├── source-selected-computer-science-entries-0-to-4-20261015.txt # Solve计算机科学pack前五条有限语义与来源复核
+├── source-selected-computer-science-entries-5-to-9-20261015.txt # Solve计算机科学pack后五条有限语义与来源复核
 ├── source-selected-title-matches-20261014.txt # 两条同名命中来源的有限冻结选区
 ├── source-selected-near-title-matches-20261014.txt # 五条编程原则近标题命中的有限冻结选区
 ├── source-selected-principle-operations-20261014.txt # 七条编程原则操作化对照及完整Solve记录
